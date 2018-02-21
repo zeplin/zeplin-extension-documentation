@@ -77,7 +77,7 @@ Here's a sample options field from one of our manifests:
     "default": "4"
 }, {
     "name": "Default attributes",
-    "type": "checkbox",
+    "type": "switch",
     "id": "defaultAttributes",
     "default": true
 }]
