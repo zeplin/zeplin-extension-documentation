@@ -2,7 +2,7 @@
 
 Zeplin extensions are JavaScript modules that generate code snippets from various design elements. All code snippets you interact with in Zeplin are generated using extensions and they're curated at [extensions.zeplin.io](https://extensions.zeplin.io).
 
-If you're interested in developing your own Zeplin extension, you are at the right place. This documentation covers the basics of building one along with a tutorial and discusses their capabilities.
+If you're interested in developing your own Zeplin extension, this documentation covers the basics of building one along with a tutorial and discusses their capabilities.
 
 Ping us at [extensions@zeplin.io](mailto:extensions@zeplin.io) if you'd like us to publish your extension at [extensions.zeplin.io](https://extensions.zeplin.io) or if you have any questions—we'd love to hear what you're building!
 
@@ -62,4 +62,4 @@ Quickly jump to a particular model to learn more about it.
 
 ## Example extensions
 
-_Check back later during the beta for examples. The plan is to open source our existing extensions, like React Native and Attributed String, to provide full-fledged examples used by thousands of developers everyday!_
+_Check back in a few days for example extensions. The plan is to open source our existing extensions, like React Native and Attributed Strings, to provide full-fledged examples used by thousands of developers everyday._
