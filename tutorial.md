@@ -37,19 +37,17 @@ Let's try it out.
 
 ### Adding a local extension
 
-During the beta, to debug and work with your extensions, you can add them to your Zeplin projects locally from the Extensions window.
-
-*[TODO: Add Extensions button screenshot.]*
+During the beta, to debug and work with your extensions, you can add them to your Zeplin projects locally from their Extensions window.
 
 Holding down the Option key will enable the “Add Local Extension” option on the title bar:
 
-*[TODO: Add Add Local Extension button screenshot.]*
+![Add local extension](img/addLocalExtension.png)
 
-You could host these files, locally or on a server, and enter the manifest URL but the simplest way is to use the Browse button and select the manifest file.
+You could host these files (locally or on a server) and enter the manifest URL but the simplest way would to use the Browse button and pick the manifest file. This should add the extension to the project and that's pretty much it.
 
-This should add the extension to the project and that's pretty much it. Go ahead, click a layer!
+Go ahead, click a layer!
 
-*[TODO: Add extension snippet view screenshot.]*
+![Text](img/text.png)
 
 ### Displaying code snippets
 
@@ -75,9 +73,9 @@ function layer(context, layer) {
 
 We now create an object first and turn it into a JSON string using `JSON.stringify`. Instead of returning the string directly though, we return an object to let Zeplin (no pun intended) know that we want this string to be highlighted as a JSON.
 
-Here's what this should look like in Zeplin:
+Here's how this should look like in Zeplin:
 
-*[TODO: Add extension snippet view screenshot.]*
+![Code snippet](img/codeSnippet.png)
 
 Displaying code snippets in the project Styleguide is pretty straightforward as well. Similar to the `layer` function, you can define `styleguideColors`, `styleguideTextStyles` and `comment` functions.
 
@@ -87,6 +85,6 @@ All the functions that an extension can define are listed in detail in the [`Ext
 
 So far, we've only accessed the name of the selected layer and the project but extensions can access pretty much all the data you see in Zeplin. In fact, all the built-in code snippets in Zeplin are implemented as extensions, using the same infrastructure.
 
-Make sure to explore the documentation for the [manifest file](manifest.md), [extension functions](model/extension.md) and [models](model) to see what's in store!
+Make sure to explore the documentation for the [manifest file](manifest.md), [extension functions](model/extension.md) and [models](model) to see what's in store! 📚
 
 If you have any questions, feel free to ping us at [extensions@zeplin.io](mailto:extensions@zeplin.io).

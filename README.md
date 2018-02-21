@@ -12,7 +12,7 @@ If you just want to try out extensions and ended up here by mistake, head to [ex
 
 ## What is an extension?
 
-*[TODO: Add CSS extension screenshot.]*
+![CSS extension](img/cssExtension.png)
 
 Extensions are JavaScript modules that implement various functions to generate code snippets from models.
 
