@@ -79,7 +79,7 @@ Here's how this should look like in Zeplin:
 
 Displaying code snippets in the project Styleguide is pretty straightforward as well. Similar to the `layer` function, you can define `styleguideColors`, `styleguideTextStyles` and `comment` functions.
 
-All the functions that an extension can define are listed in detail in the [`Extension`](model/extension.js) documentation.
+All the functions that an extension can define are listed in detail in the [`Extension`](model/extension.md) documentation.
 
 ### What's next?
 
