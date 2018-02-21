@@ -2,7 +2,7 @@
 
 Zeplin extensions are JavaScript modules that generate code snippets from various design elements. All code snippets you interact with in Zeplin are generated using extensions and they're curated at [extensions.zeplin.io](https://extensions.zeplin.io).
 
-If you're interested in developing your own Zeplin extension, this documentation covers the basics of building one along with a tutorial and discusses their capabilities.
+If you're interested in developing your own Zeplin extension, this documentation covers the basics of building one along with a [tutorial](tutorial.md) and discusses their capabilities.
 
 Ping us at [extensions@zeplin.io](mailto:extensions@zeplin.io) if you'd like us to publish your extension at [extensions.zeplin.io](https://extensions.zeplin.io) or if you have any questions—we'd love to hear what you're building!
 
