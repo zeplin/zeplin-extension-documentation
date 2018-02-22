@@ -6,7 +6,7 @@
     * [.styleguideColors(context, colors)](#Extension+styleguideColors) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
     * [.styleguideTextStyles(context, textStyles)](#Extension+styleguideTextStyles) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
     * [.layer(context, selectedLayer)](#Extension+layer) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
-    * [.comment(context, selectedLayer)](#Extension+comment) ⇒ <code>String</code>
+    * [.comment(context, text)](#Extension+comment) ⇒ <code>String</code>
     * [.exportStyleguideColors(context, colors)](#Extension+exportStyleguideColors) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
     * [.exportStyleguideTextStyles(context, textStyles)](#Extension+exportStyleguideTextStyles) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
 
