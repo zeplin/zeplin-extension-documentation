@@ -14,8 +14,8 @@ Project that the extension is running in.
 **Kind**: instance property of [<code>Context</code>](#Context)
 <a name="Context+getOption"></a>
 
-### context.getOption(name) ⇒ <code>Number</code> \| <code>Boolean</code> \| <code>String</code>
-Value of the option with name `name`.
+### context.getOption(id) ⇒ <code>Number</code> \| <code>Boolean</code> \| <code>String</code>
+Value of the option with id.
 
 **Kind**: instance method of [<code>Context</code>](#Context)
 **Returns**: <code>Number</code> \| <code>Boolean</code> \| <code>String</code> - Value of the option.  
