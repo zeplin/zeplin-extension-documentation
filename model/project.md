@@ -20,7 +20,7 @@
 <a name="Project+type"></a>
 
 ### project.type : <code>String</code>
-Type of the project, `web`, `android`, `ios` or `macos`.
+Type of the project, `web`, `android`, `ios` or `osx`.
 
 **Kind**: instance property of [<code>Project</code>](#Project)
 <a name="Project+name"></a>
