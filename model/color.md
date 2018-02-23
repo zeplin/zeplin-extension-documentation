@@ -19,7 +19,7 @@
 <a name="Color+name"></a>
 
 ### color.name : <code>String</code>
-Name of the color.
+Name of the color, only exists on project colors. To check if a color (e.g. from a layer) exists in the project, see [`Project.findColorEqual`](project.md#Project+findColorEqual).
 
 **Kind**: instance property of [<code>Color</code>](#Color)
 <a name="Color+r"></a>
