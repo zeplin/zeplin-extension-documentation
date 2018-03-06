@@ -60,6 +60,12 @@ Quickly jump to a particular model to learn more about it.
 - [`Shadow`](model/shadow.md)
 - [`Blur`](model/blur.md)
 
-## Example extensions
+## Examples
 
-_Check back in a few days for example extensions. The plan is to open source our existing extensions, like React Native and Attributed Strings, to provide full-fledged examples used by thousands of developers everyday._
+### React Native
+
+[zeplin/react-native-extension](https://github.com/zeplin/react-native-extension)
+
+React Native extension used in Zeplin, used by thousands of developers everyday. It's a full-fledged extension example, generating React Native JavaScript snippets from colors, text styles and layers.
+
+_Check back later for more examples—the plan is to open source most of our existing extensions._
