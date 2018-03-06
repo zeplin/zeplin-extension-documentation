@@ -68,4 +68,4 @@ Quickly jump to a particular model to learn more about it.
 
 React Native extension used in Zeplin, used by thousands of developers everyday. It's a full-fledged extension example, generating React Native JavaScript snippets from colors, text styles and layers.
 
-_Check back later for more examples—the plan is to open source all of our existing extensions._
+_Check back later for more examples—the plan is to open source most of our existing extensions._
