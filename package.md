@@ -4,7 +4,7 @@ npm's `package.json` defines everything you, and Zeplin, need to know about an e
 
 Zeplin-specific properties are stored under `package.json`'s `zeplin` property.
 
-```json
+```
 {
     "name": "my-extension",
     "description": …,
