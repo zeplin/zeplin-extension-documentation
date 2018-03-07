@@ -1,28 +1,29 @@
-## Manifest
+# `package.json`
 
-Manifest is a JSON document that defines everything you, and Zeplin, need to know about an extension.
+npm's `package.json` defines everything you, and Zeplin, need to know about an extension, along with its dependencies.
 
-### name : `String`
+## Zeplin-specific properties
 
-The name is required, as that's what your extension is called.
+Zeplin-specific properties are stored under `package.json`'s `zeplin` property.
 
-ProTip: Try to avoid the word "zeplin" in the name, as it's assumed.
+```json
+{
+    "name": "my-extension",
+    "description": …,
+    "version": …,
+    "zeplin": {
+        "displayName": "My Extension",
+        "options": …
+    },
+    …
+}
+```
 
-### description : `String`
+### displayName : `String`
 
-A short sentence describing what the extension does, e.g. “Generates CSS snippets from colors, text styles and layers.”
+Display name is optional but encouraged, as this is how the extension will be listed in the apps.
 
-Description field is required, as it helps users quickly find the extension they're looking for.
-
-### version : `String`
-
-Version of the extension.
-
-Changes to your module should come along with changes to the version as well.
-
-### moduleURL : `String`
-
-Relative or absolute path to the JavaScript document of the extension.
+ProTip: Try to avoid the word "zeplin" in the display name, as it's assumed.
 
 ### options : `Array.<Option>`
 
@@ -55,7 +56,7 @@ Currently, three types of options are supported:
 | name | <code>String</code> | Display name of the picker option. |
 | value | <code>String</code> | Value of the picker option. |
 
-Here's a sample options field from one of our manifests:
+Here's a sample options property:
 
 ```json
 [{
@@ -82,6 +83,30 @@ Here's a sample options field from one of our manifests:
     "default": true
 }]
 ```
+
+## Key properties
+
+Zeplin makes use of some key `package.json` properties.
+
+### name : `String`
+
+Uniquely defines the package for `npm`. Zeplin prefers  `displayName` Zeplin-specific property as the name listed in the apps.
+
+### description : `String`
+
+A short sentence describing what the extension does, e.g. “Generates CSS snippets from colors, text styles and layers.”
+
+Description field is required, as it helps users quickly find the extension they're looking for.
+
+### version : `String`
+
+Version of the extension.
+
+Changes to your module should come along with changes to the version as well.
+
+### moduleURL : `String`
+
+Relative or absolute path to the JavaScript document of the extension.
 
 ### author : `Author`
 
