@@ -1,5 +1,5 @@
 <p align="center">
-    ![Zeplin](img/logo.svg)
+    <img src="img/logo.svg" alt="Zeplin Logo" />
 </p>
 
 # Zeplin Extension Documentation ⚗️📚
@@ -70,7 +70,7 @@ To learn more about zem, [see documentation](https://github.com/zeplin/zem).
 We've prepared a tutorial to guide you through your first Zeplin extension, dive in:
 
 <h3 align="center">
-    🎓 [View tutorial](tutorial.md)
+    🎓 <a href="tutorial.md">View tutorial</a>
 </h3>
 
 ## Models
