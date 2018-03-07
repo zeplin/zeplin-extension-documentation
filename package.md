@@ -1,5 +1,3 @@
-# `package.json`
-
 npm's `package.json` defines everything you, and Zeplin, need to know about an extension, along with its dependencies.
 
 ## Zeplin-specific properties
