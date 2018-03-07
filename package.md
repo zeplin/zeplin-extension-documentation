@@ -11,6 +11,7 @@ Zeplin-specific properties are stored under `package.json`'s `zeplin` property.
     "version": …,
     "zeplin": {
         "displayName": "My Extension",
+        "projectTypes": ["web"],
         "options": …
     },
     …
@@ -22,6 +23,10 @@ Zeplin-specific properties are stored under `package.json`'s `zeplin` property.
 Display name is optional but encouraged, as this is how the extension will be listed in the apps.
 
 ProTip: Try to avoid the word "zeplin" in the display name, as it's assumed.
+
+### projectTypes : `Array.<String>`
+
+Project types that the extension can run in, `web`, `android`, `ios` or `osx`.
 
 ### options : `Array.<Option>`
 
@@ -94,7 +99,7 @@ Uniquely defines the package for `npm`. Zeplin prefers  `displayName` Zeplin-spe
 
 A short sentence describing what the extension does, e.g. “Generates CSS snippets from colors, text styles and layers.”
 
-Description field is required, as it helps users quickly find the extension they're looking for.
+Description property is required, as it helps users quickly find the extension they're looking for.
 
 ### version : `String`
 
@@ -102,13 +107,13 @@ Version of the extension.
 
 Changes to your module should come along with changes to the version as well.
 
-### moduleURL : `String`
+### main : `String`
 
-Relative or absolute path to the JavaScript document of the extension.
+Entry point of the extension, defaults to `src/index.js` when not provided.
 
 ### author : `Author`
 
-Author is an optional field, representing the person or the team working on the extension.
+Author is an optional property, representing the person or the team working on the extension.
 
 #### Author : <code>Object</code>
 
@@ -122,4 +127,4 @@ Author is an optional field, representing the person or the team working on the 
 
 ### repository : `String`
 
-If your extension is open source, repository URL is an optional URL field pointing to where your extension code lives. This is helpful for people who want to contribute.
+If your extension is open source, repository URL is an optional URL property pointing to where your extension code lives. This is helpful for people who want to contribute.
