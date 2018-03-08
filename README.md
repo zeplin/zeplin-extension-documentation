@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="img/logo.svg" alt="Zeplin Logo" />
+</p>
+
 # Zeplin Extension Documentation ⚗️📚
 
 Zeplin extensions are JavaScript modules that generate code snippets from various design elements. All code snippets you interact with in Zeplin are generated using extensions and they're curated at [extensions.zeplin.io](https://extensions.zeplin.io).
@@ -18,34 +22,60 @@ Extensions are JavaScript modules that implement various functions to generate c
 
 In the example above, Zeplin invokes the `layer` function of the extension, passing the selected layer object as a parameter. Returned value is then displayed. Code highlighting is performed by Zeplin, extensions only communicate the preferred language.
 
-Extensions contain at least two files:
+## Getting started
 
-#### Manifest
+[zem](https://github.com/zeplin/zem), Zeplin extension manager, is a command line tool that lets you quickly create and test  extensions.
 
-JSON document that defines everything you need to know about an extension.
+If you have npm 5.2+ installed, you can run zem directly to create one:
 
-- Defines basic information like the name, description and author.
-- Defines the location of the module file.
-- Defines options.
+```sh
+npx zem create my-extension
+```
 
-[See manifest documentation](manifest.md) for details.
+Under `my-extension`, zem will generate the initial project structure:
 
-#### Module
+```
+my-extension
+├── README.md
+├── package.json
+└── src
+    └── index.js
+```
 
-JavaScript document that implements functions that correspond to different actions, to name a few:
+#### `index.js`
+
+Default entry point for the extension, a JavaScript document that exports functions, corresponding to different actions. To name a few:
 
 - `styleguideColors`: Generates snippets from Styleguide colors.
 - `layer`: Generates snippets from layers.
 
 [See `Extension` documentation](model/extension.md) for all the functions and their details.
 
+#### `package.json`
+
+npm's `package.json` defines everything you, and Zeplin, need to know about an extension, along with its dependencies.
+
+Apart from with basic information like name and description, under the `zeplin` key, extensions can also define options.
+
+[See `package.json` documentation](package.md) for details.
+
+### Running an extension
+
+zem also lets you run an extension in the command line, during development. You can execute functions with sample data and observe the results, without running the extension inside Zeplin.
+
+To learn more about zem, [see documentation](https://github.com/zeplin/zem).
+
 ## Your first extension
 
-We've prepared a [tutorial](tutorial.md) to guide you through your first Zeplin extension, dive in!
+We've prepared a tutorial to guide you through your first Zeplin extension, dive in:
 
-## Model documentation
+<h3 align="center">
+    🎓 <a href="tutorial.md">View tutorial</a>
+</h3>
 
-Quickly jump to a particular model to learn more about it.
+## Models
+
+Quickly jump to the documentation of a particular model to learn more about it.
 
 - [`Extension`](model/extension.md)
 - [`Context`](model/context.md)
