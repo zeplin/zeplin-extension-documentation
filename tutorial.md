@@ -47,7 +47,7 @@ Here's what zem generates by default:
     "scripts: {
         …
     },
-    "dependencies": {
+    "devDependencies": {
         "zem": …
     },
     "zeplin": {
@@ -151,13 +151,19 @@ All looking good. Time to add this extension to Zeplin!
 
 During the beta, to debug and work with your extensions, you can add them to your Zeplin projects locally from their Extensions window.
 
-Holding down the Option key will enable the “Add Local Extension” option on the title bar:
+On the Mac app, holding down the Option key will enable the “Add Local Extension” option on the title bar:
 
 ![Add local extension](img/addLocalExtension.png)
 
-zem also lets you run a local server to serve the extension. If you're using the Mac app though, the simplest way would to use the Browse button and select the `manifest.json` file in the `dist` directory under your extension.
+zem provides a script to serve the extension locally:
 
-This should add the extension to the project and that's pretty much it. Go ahead, click a layer!
+```sh
+npm start
+```
+
+After running the script, enter `http://localhost:7070/manifest.json` as the URL and click Add.
+
+That's pretty much it. Go ahead, click a layer!
 
 ![Code snippet](img/codeSnippet.png)
 
