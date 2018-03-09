@@ -33,6 +33,8 @@ hello-layer
     └── index.js
 ```
 
+Open the project in your favorite text editor and let's go over the generated documents.
+
 #### `package.json`
 
 Everything you, and Zeplin, need to know about an extension, along with its dependencies are defined in this JSON document. It functions as a regular npm `package.json` document, also containing Zeplin-specific properties.
@@ -101,7 +103,7 @@ Time to give this extension a try.
 
 zem also lets you run an extension in the command line. You can execute functions with sample data and observe the results, without running the extension inside Zeplin.
 
-Let's run the `exec` script for the `layer` function:
+Make sure that you're at the project directory and let's run the `exec` script for the `layer` function:
 
 ```sh
 npm run exec -- layer
