@@ -49,9 +49,9 @@ Text styles of the text layer, with ranges.
 | Name | Type |
 | --- | --- |
 | range | <code>Object</code> |
-| range.location | <code>Number</code> |
-| range.length | <code>Number</code> |
-| style | [<code>TextStyle</code>](textStyle.md) |
+| range.start | <code>Number</code> |
+| range.end | <code>Number</code> |
+| textStyle | [<code>TextStyle</code>](textStyle.md) |
 
 <a name="Layer+type"></a>
 
