@@ -94,7 +94,7 @@ Generates code export objects from Styleguide text styles.
 | Name | Type | Description |
 | --- | --- | --- |
 | code | <code>String</code> | Generated snippet. |
-| mode | <code>String</code> | Language for the generated snippet, e.g. `javascript`, `swift`. |
+| language | <code>String</code> | Language for the generated snippet, e.g. `javascript`, `swift`. |
 
 
 <a name="CodeExportObject"></a>
@@ -107,5 +107,5 @@ Generates code export objects from Styleguide text styles.
 | Name | Type | Description |
 | --- | --- | --- |
 | code | <code>String</code> | Content of the file. |
-| mode | <code>String</code> | Language for the generated snippet, e.g. `javascript`, `swift`. |
+| language | <code>String</code> | Language for the generated snippet, e.g. `javascript`, `swift`. |
 | filename | String | Name of the file. |
