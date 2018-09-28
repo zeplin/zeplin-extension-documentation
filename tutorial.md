@@ -153,7 +153,7 @@ All looking good. Time to add this extension to Zeplin!
 
 To debug and work with your extensions, you can add them to your Zeplin projects locally from their Extensions window.
 
-On Mac, Windows or Web apps, holding down the Option key will enable the “Add Local Extension” option on the title bar:
+On Mac, Windows or Web apps, holding down the <kbd>⌥ Option</kbd> or <kbd>Alt</kbd> key will enable the “Add Local Extension” option on the title bar:
 
 ![Add local extension](img/addLocalExtension.png)
 
