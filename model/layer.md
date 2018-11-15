@@ -9,19 +9,23 @@
     * [.fills](#Layer+fills) : [<code>Array.&lt;Fill&gt;</code>](fill.md)
     * [.borders](#Layer+borders) : [<code>Array.&lt;Border&gt;</code>](border.md)
     * [.shadows](#Layer+shadows) : [<code>Array.&lt;Shadow&gt;</code>](shadow.md)
-    * [.blur](#Layer+blur) : <code>Blur</code>
+    * [.blur](#Layer+blur) : [<code>Blur</code>](blur.md)
     * [.opacity](#Layer+opacity) : <code>Number</code>
     * [.blendMode](#Layer+blendMode) : [<code>Fill.BLEND_MODES</code>](fill.md)
     * [.borderRadius](#Layer+borderRadius) : <code>Number</code>
     * [.rotation](#Layer+rotation) : <code>Number</code>
     * [.exportable](#Layer+exportable) : <code>Boolean</code>
     * [.assets](#Layer+assets) : <code>Array.&lt;Object&gt;</code>
+    * [.parent](#Layer+parent) : [<code>Layer</code>](#Layer)
+    * [.version](#Layer+version) : [<code>Version</code>](version.md)
     * [.content](#Layer+content) : <code>String</code>
     * [.textStyles](#Layer+textStyles) : <code>Array.&lt;Object&gt;</code>
+    * [.layers](#Layer+layers) : <code>Array.&lt;Layer&gt;</code>
+    * [.componentName](#Layer+componentName) : <code>String</code>
 
 <a name="Layer+type"></a>
 ### layer.type : <code>String</code>
-Type of the layer, `text` or `shape`.
+Type of the layer, `text`, `shape` or `group`.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
 
@@ -65,7 +69,7 @@ Shadows applied to the layer.
 **Kind**: instance property of [<code>Layer</code>](#Layer)
 
 <a name="Layer+blur"></a>
-### layer.blur : <code>Blur</code>
+### layer.blur : [<code>Blur</code>](blur.md)
 Blur applied to the layer.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
@@ -113,6 +117,18 @@ Assets of the layer.
 | density | <code>string</code> |
 | format | <code>string</code> |
 
+<a name="Layer+parent"></a>
+### layer.parent : [<code>Layer</code>](#Layer)
+Parent layer of the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+version"></a>
+### layer.version : [<code>Version</code>](version.md)
+Version of the screen or component containing the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
 <a name="Layer+content"></a>
 ### layer.content : <code>String</code>
 Text of the text layer.
@@ -133,3 +149,15 @@ Text styles of the text layer, with ranges.
 | range.start | <code>Number</code> |
 | range.end | <code>Number</code> |
 | textStyle | [<code>TextStyle</code>](textStyle.md) |
+
+<a name="Layer+layers"></a>
+### layer.layers : [<code>Array.&lt;Layer&gt;</code>](fill.md)
+Child layers of the group layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+componentName"></a>
+### layer.componentName : <code>String</code>
+Name of the component the group layer is referencing.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
