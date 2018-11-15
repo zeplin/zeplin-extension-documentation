@@ -20,7 +20,7 @@
     * [.version](#Layer+version) : [<code>Version</code>](version.md)
     * [.content](#Layer+content) : <code>String</code>
     * [.textStyles](#Layer+textStyles) : <code>Array.&lt;Object&gt;</code>
-    * [.layers](#Layer+layers) : <code>Array.&lt;Layer&gt;</code>
+    * [.layers](#Layer+layers) : [<code>Array.&lt;Layer&gt;</code>](layer.md)
     * [.componentName](#Layer+componentName) : <code>String</code>
 
 <a name="Layer+type"></a>
@@ -151,7 +151,7 @@ Text styles of the text layer, with ranges.
 | textStyle | [<code>TextStyle</code>](textStyle.md) |
 
 <a name="Layer+layers"></a>
-### layer.layers : [<code>Array.&lt;Layer&gt;</code>](fill.md)
+### layer.layers : [<code>Array.&lt;Layer&gt;</code>](layer.md)
 Child layers of the group layer.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
