@@ -87,3 +87,8 @@ Grid (i.e. layout) of the version.
 Names of components used in the version.
 
 **Kind**: instance property of [<code>Version</code>](#Version)
+
+### Related models
+
+- [`Screen`](model/screen.md)
+- [`Component`](model/component.md)
