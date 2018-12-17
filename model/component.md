@@ -6,7 +6,7 @@
     * [.name](#Component+name) : <code>String</code>
     * [.description](#Component+desciption) : <code>String</code>
 
-See [`Version`](model/version.md) for properties of a component that change over time, like `layers`, `image` and so on.
+See [`Version`](version.md) for properties of a component that change over time, like `layers`, `image` and so on.
 
 <a name="Component+name"></a>
 ### component.name : <code>String</code>
@@ -22,4 +22,4 @@ Description of the component.
 
 ### Related models
 
-- [`Version`](model/version.md)
+- [`Version`](version.md)

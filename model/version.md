@@ -90,5 +90,5 @@ Names of components used in the version.
 
 ### Related models
 
-- [`Screen`](model/screen.md)
-- [`Component`](model/component.md)
+- [`Screen`](screen.md)
+- [`Component`](component.md)

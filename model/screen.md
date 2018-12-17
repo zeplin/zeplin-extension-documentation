@@ -7,7 +7,7 @@
     * [.description](#Screen+desciption) : <code>String</code>
     * [.tags](#Screen+tags) : <code>Array.&lt;String&gt;</code>
 
-See [`Version`](model/version.md) for properties of a screen that change over time, like `layers`, `image` and so on.
+See [`Version`](version.md) for properties of a screen that change over time, like `layers`, `image` and so on.
 
 <a name="Screen+name"></a>
 ### screen.name : <code>String</code>
@@ -29,4 +29,4 @@ Tags of the screen.
 
 ### Related models
 
-- [`Version`](model/version.md)
+- [`Version`](version.md)
