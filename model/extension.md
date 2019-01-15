@@ -3,15 +3,51 @@
 
 <a name="Extension"></a>
 * [Extension](#Extension)
+    * [.layer(context, selectedLayer)](#Extension+layer) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
+    * [.screen(context, selectedVersion, selectedScreen)](#Extension+screen) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
+    * [.component(context, selectedVersion, selectedComponent)](#Extension+component) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
     * [.styleguideColors(context, colors)](#Extension+styleguideColors) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
     * [.styleguideTextStyles(context, textStyles)](#Extension+styleguideTextStyles) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
-    * [.layer(context, selectedLayer)](#Extension+layer) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
     * [.comment(context, text)](#Extension+comment) ⇒ <code>String</code>
     * [.exportStyleguideColors(context, colors)](#Extension+exportStyleguideColors) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
     * [.exportStyleguideTextStyles(context, textStyles)](#Extension+exportStyleguideTextStyles) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
 
-<a name="Extension+styleguideColors"></a>
+<a name="Extension+layer"></a>
+### extension.layer(context, selectedLayer) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
+Generates string or code object from the selected layer.
 
+**Kind**: instance method of [<code>Extension</code>](#Extension)
+
+| Param | Type |
+| --- | --- |
+| context | <code>[Context](context.md)</code> |
+| selectedLayer | <code>[Layer](layer.md)</code> |
+
+<a name="Extension+screen"></a>
+### extension.screen(context, selectedVersion, selectedScreen) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
+Generates string or code object from the selected version of a screen.
+
+**Kind**: instance method of [<code>Extension</code>](#Extension)
+
+| Param | Type |
+| --- | --- |
+| context | <code>[Context](context.md)</code> |
+| selectedVersion | <code>[Version](version.md)</code> |
+| selectedScreen | <code>[Screen](screen.md)</code> |
+
+<a name="Extension+component"></a>
+### extension.component(context, selectedVersion, selectedComponent) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
+Generates string or code object from the selected version of a component, currently limited to the latest version.
+
+**Kind**: instance method of [<code>Extension</code>](#Extension)
+
+| Param | Type |
+| --- | --- |
+| context | <code>[Context](context.md)</code> |
+| selectedVersion | <code>[Version](version.md)</code> |
+| selectedComponent | <code>[Component](component.md)</code> |
+
+<a name="Extension+styleguideColors"></a>
 ### extension.styleguideColors(context, colors) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
 Generates string or code object from Styleguide colors.
 
@@ -23,7 +59,6 @@ Generates string or code object from Styleguide colors.
 | colors | [<code>Array.&lt;Color&gt;</code>](color.md) |
 
 <a name="Extension+styleguideTextStyles"></a>
-
 ### extension.styleguideTextStyles(context, textStyles) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
 Generates string or code object from Styleguide text styles.
 
@@ -34,22 +69,9 @@ Generates string or code object from Styleguide text styles.
 | context | <code>[Context](context.md)</code> |
 | textStyles | [<code>Array.&lt;TextStyle&gt;</code>](textStyle.md) |
 
-<a name="Extension+layer"></a>
-
-### extension.layer(context, selectedLayer) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
-Generates string or code object from selected layer.
-
-**Kind**: instance method of [<code>Extension</code>](#Extension)
-
-| Param | Type |
-| --- | --- |
-| context | <code>[Context](context.md)</code> |
-| selectedLayer | <code>[Layer](layer.md)</code> |
-
 <a name="Extension+comment"></a>
-
 ### extension.comment(context, text) ⇒ <code>String</code>
-Generates comment from the text, in extension's target language.
+Generates comment string from the text, in extension's target language, displayed alongside of Styleguide colors and text styles.
 
 **Kind**: instance method of [<code>Extension</code>](#Extension)
 
@@ -61,7 +83,6 @@ Generates comment from the text, in extension's target language.
 | text | <code>String</code> |
 
 <a name="Extension+exportStyleguideColors"></a>
-
 ### extension.exportStyleguideColors(context, colors) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) |  [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
 Generates code export objects from Styleguide colors.
 
@@ -73,7 +94,6 @@ Generates code export objects from Styleguide colors.
 | colors | [<code>Array.&lt;Color&gt;</code>](color.md) |
 
 <a name="Extension+exportStyleguideTextStyles"></a>
-
 ### extension.exportStyleguideTextStyles(context, textStyles) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) |  [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
 Generates code export objects from Styleguide text styles.
 
@@ -85,7 +105,6 @@ Generates code export objects from Styleguide text styles.
 | textStyles | [<code>Array.&lt;TextStyle&gt;</code>](textStyle.md) |
 
 <a name="CodeObject"></a>
-
 ## CodeObject : <code>Object</code>
 **Kind**: global typedef
 
@@ -98,7 +117,6 @@ Generates code export objects from Styleguide text styles.
 
 
 <a name="CodeExportObject"></a>
-
 ## CodeExportObject : <code>Object</code>
 **Kind**: global typedef
 

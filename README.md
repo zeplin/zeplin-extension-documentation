@@ -78,6 +78,8 @@ Quickly jump to the documentation of a particular model to learn more about it.
 - [`Extension`](model/extension.md)
 - [`Context`](model/context.md)
 - [`Project`](model/project.md)
+- [`Screen`](model/screen.md)
+- [`Component`](model/component.md)
 - [`Version`](model/version.md)
 - [`Color`](model/color.md)
 - [`Gradient`](model/gradient.md)
