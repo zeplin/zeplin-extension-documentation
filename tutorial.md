@@ -169,9 +169,11 @@ That's pretty much it. Go ahead, click a layer!
 
 ![Code snippet](img/codeSnippet.png)
 
-### Displaying code snippets in the Styleguide
+### Available functions
 
-Displaying code snippets in the project Styleguide is pretty straightforward as well. Similar to the `layer` function, you can define `styleguideColors`, `styleguideTextStyles` and `comment` functions.
+Displaying code snippets in the project Styleguide is pretty straightforward as well. Similar to the `layer` function, you can implement `styleguideColors`, `styleguideTextStyles` and `comment` functions.
+
+You can also implement `screen` or `component` functions to display snippets from screens and components.
 
 All the functions that an extension can define are listed in detail in the [`Extension`](model/extension.md) documentation.
 

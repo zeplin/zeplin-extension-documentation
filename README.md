@@ -10,8 +10,6 @@ If you're interested in developing your own Zeplin extension, this documentation
 
 If you just want to try out extensions and ended up here by mistake, head to [extensions.zeplin.io](https://extensions.zeplin.io) to browse them.
 
-☝️ _Friendly reminder: This documentation will likely change as we polish things during the beta._
-
 ## What is an extension?
 
 ![CSS extension](img/cssExtension.png)
@@ -45,7 +43,9 @@ my-extension
 Default entry point for the extension, a JavaScript document that exports functions, corresponding to different actions. To name a few:
 
 - `styleguideColors`: Generates snippets from Styleguide colors.
-- `layer`: Generates snippets from layers.
+- `layer`: Generates snippets from the selected layer.
+- `screen`: Generates snippets from the screen.
+- `component`: Generates snippets the selected component.
 
 [See `Extension` documentation](model/extension.md) for all the functions and their details.
 
@@ -53,7 +53,7 @@ Default entry point for the extension, a JavaScript document that exports functi
 
 npm's `package.json` defines everything you, and Zeplin, need to know about an extension, along with its dependencies.
 
-Apart from with basic information like name and description, under the `zeplin` key, extensions can also define options.
+Apart from basic information like name and description, under the `zeplin` key, extensions can also define options.
 
 [See `package.json` documentation](package.md) for details.
 
