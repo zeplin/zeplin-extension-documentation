@@ -11,7 +11,7 @@ Zeplin-specific properties are stored under `package.json`'s `zeplin` property.
     "version": …,
     "zeplin": {
         "displayName": "My Extension",
-        "projectTypes": ["web"],
+        "platforms": ["web"],
         "options": …
     },
     …
@@ -24,9 +24,9 @@ Display name is optional but encouraged, as this is how the extension will be li
 
 ProTip: Try to avoid the word "zeplin" in the display name, as it's assumed.
 
-### projectTypes : `Array.<String>`
+### platforms : `Array.<String>`
 
-Project types that the extension can run in, `web`, `android`, `ios` or `osx`.
+Platforms that the extension can run in, `web`, `android`, `ios` or `osx`.
 
 ### options : `Array.<Option>`
 

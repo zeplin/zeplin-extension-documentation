@@ -42,7 +42,7 @@ my-extension
 
 Default entry point for the extension, a JavaScript document that exports functions, corresponding to different actions. To name a few:
 
-- `styleguideColors`: Generates snippets from Styleguide colors.
+- `colors`: Generates snippets from Project or Styleguide colors.
 - `layer`: Generates snippets from the selected layer.
 - `screen`: Generates snippets from the screen.
 - `component`: Generates snippets the selected component.
@@ -78,6 +78,7 @@ Quickly jump to the documentation of a particular model to learn more about it.
 - [`Extension`](model/extension.md)
 - [`Context`](model/context.md)
 - [`Project`](model/project.md)
+- [`Styleguide`](model/styleguide.md)
 - [`Screen`](model/screen.md)
 - [`Component`](model/component.md)
 - [`Version`](model/version.md)
