@@ -172,7 +172,7 @@ That's pretty much it. Go ahead, click a layer!
 
 ### Available functions
 
-Displaying code snippets in the project's local styleguide or shared styleguides is pretty straightforward as well. Similar to the `layer` function, you can implement `colors`, `textStyles` and `comment` functions.
+Displaying code snippets in the project's local styleguide or shared styleguides is pretty straightforward as well. Similar to the `layer` function, you can implement `colors` and `textStyles` functions.
 
 You can also implement `screen` or `component` functions to display snippets from screens and components.
 
