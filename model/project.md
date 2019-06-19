@@ -11,11 +11,12 @@
     * [.densityDivisor](#Project+densityDivisor) : <code>Number</code>
     * [.lengthUnit](#Project+lengthUnit) : <code>String</code>
     * [.textLengthUnit](#Project+textLengthUnit) : <code>String</code>
-    * [.findTextStyleByName(name)](#Project+findTextStyleByName) ⇒ [<code>TextStyle</code>](textStyle.md)
-    * [.findTextStyleEqual(textStyle)](#Project+findTextStyleEqual) ⇒ [<code>TextStyle</code>](textStyle.md)
-    * [.findColorByName(name)](#Project+findColorByName) ⇒ [<code>Color</code>](color.md)
-    * [.findColorEqual(color)](#Project+findColorEqual) ⇒ [<code>Color</code>](color.md)
-    * [.findColorByHexAndAlpha(values)](#Project+findColorByHexAndAlpha) ⇒ [<code>Color</code>](color.md)
+    * [.linkedStyleguide](#Project+linkedStyleguide) : <code>Styleguide</code>
+    * [.findTextStyleByName(name, useLinkedStyleguides = true)](#Project+findTextStyleByName, useLinkedStyleguides = true) ⇒ [<code>TextStyle</code>](textStyle.md)
+    * [.findTextStyleEqual(textStyle, useLinkedStyleguides = true)](#Project+findTextStyleEqual) ⇒ [<code>TextStyle</code>](textStyle.md)
+    * [.findColorByName(name, useLinkedStyleguides = true)](#Project+findColorByName) ⇒ [<code>Color</code>](color.md)
+    * [.findColorEqual(color, useLinkedStyleguides = true)](#Project+findColorEqual) ⇒ [<code>Color</code>](color.md)
+    * [.findColorByHexAndAlpha(values, useLinkedStyleguides = true)](#Project+findColorByHexAndAlpha) ⇒ [<code>Color</code>](color.md)
 
 <a name="Project+type"></a>
 
@@ -65,54 +66,64 @@ Length unit of the project, based on the type, e.g. `px` for Web, `pt` for iOS.
 Text length unit of the project, based on the type, e.g. `dp` for Android.
 
 **Kind**: instance property of [<code>Project</code>](#Project)
+<a name="Project+linkedStyleguide"></a>
+
+### project.linkedStyleguide : [<code>Styleguide?</code>](styleguide.md)
+Styleguide linked to the project.
+
+**Kind**: instance property of [<code>Project</code>](#Project)
 <a name="Project+findTextStyleByName"></a>
 
-### project.findTextStyleByName(name) ⇒ [<code>TextStyle</code>](textStyle.md)
-Finds text style in the project by name.
+### project.findTextStyleByName(name, useLinkedStyleguides = true) ⇒ [<code>TextStyle?</code>](textStyle.md)
+Finds text style in the project or in the linked styleguides (if useLinkedStyleguides is true) by name.
 
 **Kind**: instance method of [<code>Project</code>](#Project)
 
-| Param | Type |
-| --- | --- |
-| name | <code>String</code> |
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>String</code> |  |
+| useLinkedStyleguides | <code>Boolean</code> | Whether linked styleguides should be included in the search. Defaults to `true`. |
 
 <a name="Project+findTextStyleEqual"></a>
 
-### project.findTextStyleEqual(textStyle) ⇒ [<code>TextStyle</code>](textStyle.md)
-Finds text style in the project equal to another text style.
+### project.findTextStyleEqual(textStyle, useLinkedStyleguides = true) ⇒ [<code>TextStyle?</code>](textStyle.md)
+Finds text style in the project or in the linked styleguides (if useLinkedStyleguides is true) equal to another text style.
 
 **Kind**: instance method of [<code>Project</code>](#Project)
 
-| Param | Type |
-| --- | --- |
-| textStyle | <code>TextStyle</code> |
+| Param | Type | Description |
+| --- | --- | --- |
+| textStyle | <code>TextStyle</code> |  |
+| useLinkedStyleguides | <code>Boolean</code> | Whether linked styleguides should be included in the search. Defaults to `true`. |
 
 <a name="Project+findColorByName"></a>
 
-### project.findColorByName(name) ⇒ [<code>Color</code>](color.md)
-Finds color in the project by name.
+### project.findColorByName(name, useLinkedStyleguides = true) ⇒ [<code>Color?</code>](color.md)
+Finds color in the project or in the linked styleguides (if useLinkedStyleguides is true) by name.
 
 **Kind**: instance method of [<code>Project</code>](#Project)
 
-| Param | Type |
-| --- | --- |
-| name | <code>String</code> |
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>String</code> |  |
+| useLinkedStyleguides | <code>Boolean</code> | Whether linked styleguides should be included in the search. Defaults to `true`. |
 
 <a name="Project+findColorEqual"></a>
 
-### project.findColorEqual(color) ⇒ [<code>Color</code>](color.md)
-Finds color in the project equal to another color.
+### project.findColorEqual(color, useLinkedStyleguides = true) ⇒ [<code>Color?</code>](color.md)
+Finds color in the project or in the linked styleguides (if useLinkedStyleguides is true) equal to another color.
 
 **Kind**: instance method of [<code>Project</code>](#Project)
 
-| Param | Type |
-| --- | --- |
-| color | <code>Color</code> |
+| Param | Type | Description |
+| --- | --- | --- |
+| color | <code>Color</code> |  |
+| useLinkedStyleguides | <code>Boolean</code> | Whether linked styleguides should be included in the search. Defaults to `true`. |
 
 <a name="Project+findColorByHexAndAlpha"></a>
 
-### project.findColorByHexAndAlpha(values) ⇒ [<code>Color</code>](color.md)
-Finds color in the project by hex and alpha values.
+### project.findColorByHexAndAlpha(values, useLinkedStyleguides = true) ⇒ [<code>Color?</code>](color.md)
+Finds color in the project or in the linked styleguides (if useLinkedStyleguides is true) by hex and alpha values.
 
 **Kind**: instance method of [<code>Project</code>](#Project)
 
@@ -121,3 +132,4 @@ Finds color in the project by hex and alpha values.
 | values | <code>Object</code> |  |
 | values.hex | <code>String</code> | Hex string for RGB components of the color, e.g. `rrggbb`. |
 | values.alpha | <code>String</code> | Alpha value of the color. |
+| useLinkedStyleguides | <code>Boolean</code> | Whether linked styleguides should be included in the search. Defaults to `true`. |

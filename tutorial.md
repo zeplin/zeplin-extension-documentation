@@ -54,7 +54,7 @@ Here's what zem generates by default:
     },
     "zeplin": {
         "displayName": "hello-layer",
-        "projectTypes": ["web"]
+        "platforms": ["web"]
     }
 }
 ```
@@ -64,20 +64,20 @@ Name, description and version properties are pretty self explanatory, they work 
 Notice that there's an additional property called `zeplin`, where Zeplin-specific properties live:
 
 - `displayName` is the name of the extension displayed in the apps, not to be confused with the root `name` property, which is npm specific.
-- `projectTypes` define which project types this extension should be available to.
+- `platforms` define which platforms this extension should be available to.
 
-Let's update `displayName` to “Hello Layer” and `projectType` to cover all the types, for the purpose of this tutorial:
+Let's update `displayName` to “Hello Layer” and `platforms` to cover all the platform types, for the purpose of this tutorial:
 
 ```
     …
     "zeplin": {
         "displayName": "Hello Layer",
-        "projectTypes": ["web", "ios", "android", "osx"]
+        "platforms": ["web", "ios", "android", "osx"]
     }
     …
 ```
 
-Normally, a Swift extension for example, should only define `ios` and `osx` as the project types.
+Normally, a Swift extension for example, should only define `ios` and `osx` as the platforms.
 
 #### `index.js`
 
@@ -122,10 +122,11 @@ Let's update it to display a JSON instead:
 
 ```js
 function layer(context, layer) {
+    const containerType = "styleguide" in context ? "styleguide" : "project";
     const object = {
         "layerName": layer.name,
-        "projectName": context.project.name
-    };
+        [`${containerType}Name`] = context[containerType].name
+    });
 
     const JSONString = JSON.stringify(object, null, 2);
 
@@ -151,7 +152,7 @@ All looking good. Time to add this extension to Zeplin!
 
 ### Adding a local extension
 
-To debug and work with your extensions, you can add them to your Zeplin projects locally from their Extensions window.
+To debug and work with your extensions, you can add them to your Zeplin projects and shared styleguides locally from their Extensions window.
 
 On Mac, Windows or Web apps, holding down the <kbd>⌥ Option</kbd> or <kbd>Alt</kbd> key will enable the “Add Local Extension” option on the title bar:
 
@@ -171,7 +172,7 @@ That's pretty much it. Go ahead, click a layer!
 
 ### Available functions
 
-Displaying code snippets in the project Styleguide is pretty straightforward as well. Similar to the `layer` function, you can implement `styleguideColors`, `styleguideTextStyles` and `comment` functions.
+Displaying code snippets in the project's local styleguide or shared styleguides is pretty straightforward as well. Similar to the `layer` function, you can implement `colors` and `textStyles` functions.
 
 You can also implement `screen` or `component` functions to display snippets from screens and components.
 
@@ -179,7 +180,7 @@ All the functions that an extension can define are listed in detail in the [`Ext
 
 ### What's next?
 
-So far, we've only accessed the name of the selected layer and the project but extensions can access pretty much all the data you see in Zeplin. In fact, all the built-in code snippets in Zeplin are implemented as extensions, using the same infrastructure.
+So far, we've only accessed the name of the selected layer and the project or the styleguide but extensions can access pretty much all the data you see in Zeplin. In fact, all the built-in code snippets in Zeplin are implemented as extensions, using the same infrastructure.
 
 Make sure to explore the documentation for [package.json](package.md), [extension functions](model/extension.md) and [models](model) to see what's in store! 📚
 
