@@ -11,7 +11,7 @@ If you have npm 5.2+ installed (or node), you can run zem directly to create the
 Let's create it in a directory called `hello-layer`.
 
 ```sh
-npx zem create hello-layer
+npm zem create hello-layer
 ```
 
 If you have an older version of npm, you can install zem globally and run it right after:
@@ -125,8 +125,8 @@ function layer(context, layer) {
     const containerType = "styleguide" in context ? "styleguide" : "project";
     const object = {
         "layerName": layer.name,
-        [`${containerType}Name`] = context[containerType].name
-    });
+        [`${containerType}Name`]: context[containerType].name
+    };
 
     const JSONString = JSON.stringify(object, null, 2);
 
