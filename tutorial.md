@@ -170,6 +170,11 @@ That's pretty much it. Go ahead, click a layer!
 
 ![Code snippet](img/codeSnippet.png)
 
+#### Logging
+You can use `console.log` within your extensions to print logs. These logs should be visible either in the browser console if you're debugging using the Web app, or the Console app if you're using the macOS app.
+
+Tip for macOS app users: In order to filter logs in the Console app, type in `process:Zeplin`, hit ENTER key, and then type `message:[Log] {PLUGIN_DISPLAY_NAME}` (e.g. `message:[Log] React Native` for the React Native Extension), and hit ENTER key again.
+
 ### Available functions
 
 Displaying code snippets in the project's local styleguide or shared styleguides is pretty straightforward as well. Similar to the `layer` function, you can implement `colors` and `textStyles` functions.
