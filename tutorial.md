@@ -125,8 +125,8 @@ function layer(context, layer) {
     const containerType = "styleguide" in context ? "styleguide" : "project";
     const object = {
         "layerName": layer.name,
-        [`${containerType}Name`] = context[containerType].name
-    });
+        [`${containerType}Name`]: context[containerType].name
+    };
 
     const JSONString = JSON.stringify(object, null, 2);
 
