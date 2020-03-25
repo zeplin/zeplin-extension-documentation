@@ -6,10 +6,10 @@
     * [.source](#Version+source) : <code>String</code>
     * [.image](#Version+image) : <code>Object</code>
     * [.backgroundColor](#Version+backgroundColor) : [<code>Color</code>](color.md)
-    * [.layers](#Version+layers) : [<code>Array.&lt;Layer&gt;</code>](layer.md)
-    * [.links](#Version+links) : <code>Array.&lt;Object&gt;</code>
+    * [.layers](#Version+layers) : [<code>Array&lt;Layer&gt;</code>](layer.md)
+    * [.links](#Version+links) : <code>Array&lt;Object&gt;</code>
     * [.grid](#Version+grid) : <code>Object</code>
-    * [.componentNames](#Version+componentNames) : <code>Array.&lt;String&gt;</code>
+    * [.componentNames](#Version+componentNames) : <code>Array&lt;String&gt;</code>
 
 <a name="Version+source"></a>
 ### version.source : <code>String</code>
@@ -38,13 +38,13 @@ Background color of the version.
 **Kind**: instance property of [<code>Version</code>](#Version)
 
 <a name="Version+layers"></a>
-### version.layers : [<code>Array.&lt;Layer&gt;</code>](layer.md)
+### version.layers : [<code>Array&lt;Layer&gt;</code>](layer.md)
 Layers of the version.
 
 **Kind**: instance property of [<code>Version</code>](#Version)
 
 <a name="Version+links"></a>
-### version.links : <code>Array.&lt;Object&gt;</code>
+### version.links : <code>Array&lt;Object&gt;</code>
 Links to other screens in the version.
 
 **Kind**: instance property of [<code>Version</code>](#Version)
@@ -83,7 +83,7 @@ Grid (i.e. layout) of the version.
 | horizontal.rowHeight | <code>Number</code> |
 
 <a name="Version+componentNames"></a>
-### version.componentNames : <code>Array.&lt;String&gt;</code>
+### version.componentNames : <code>Array&lt;String&gt;</code>
 Names of components used in the version.
 
 **Kind**: instance property of [<code>Version</code>](#Version)

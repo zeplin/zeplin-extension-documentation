@@ -8,13 +8,15 @@
     * [.component(context, selectedVersion, selectedComponent)](#Extension+component) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
     * [.colors(context)](#Extension+colors) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
     * [.textStyles(context)](#Extension+textStyles) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
-    * [.exportColors(context)](#Extension+exportColors) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
-    * [.exportTextStyles(context)](#Extension+exportTextStyles) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
+    * [.spacing(context)](#Extension+spacing) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
+    * [.exportColors(context)](#Extension+exportColors) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array&lt;CodeExportObject&gt;</code>](#CodeExportObject)
+    * [.exportTextStyles(context)](#Extension+exportTextStyles) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array&lt;CodeExportObject&gt;</code>](#CodeExportObject)
+    * [.exportSpacing(context)](#Extension+exportSpacing) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array&lt;CodeExportObject&gt;</code>](#CodeExportObject)
     * [.styleguideColors(context, colors)](#Extension+styleguideColors) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
     * [.styleguideTextStyles(context, textStyles)](#Extension+styleguideTextStyles) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
     * [.comment(context, text)](#Extension+comment) ⇒ <code>String</code>
-    * [.exportStyleguideColors(context, colors)](#Extension+exportStyleguideColors) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
-    * [.exportStyleguideTextStyles(context, textStyles)](#Extension+exportStyleguideTextStyles) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
+    * [.exportStyleguideColors(context, colors)](#Extension+exportStyleguideColors) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array&lt;CodeExportObject&gt;</code>](#CodeExportObject)
+    * [.exportStyleguideTextStyles(context, textStyles)](#Extension+exportStyleguideTextStyles) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) \| [<code>Array&lt;CodeExportObject&gt;</code>](#CodeExportObject)
 
 <a name="Extension+layer"></a>
 ### extension.layer(context, selectedLayer) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
@@ -63,7 +65,17 @@ Generates string or code object from colors in a project or styleguide.
 
 <a name="Extension+textStyles"></a>
 ### extension.textStyles(context) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
-Generates string or code object from text styles in a project or styleguide..
+Generates string or code object from text styles in a project or styleguide.
+
+**Kind**: instance method of [<code>Extension</code>](#Extension)
+
+| Param | Type |
+| --- | --- |
+| context | <code>[Context](context.md)</code> |
+
+<a name="Extension+spacing"></a>
+### extension.spacing(context) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
+Generates string or code object from spacing in a project or styleguide.
 
 **Kind**: instance method of [<code>Extension</code>](#Extension)
 
@@ -72,7 +84,7 @@ Generates string or code object from text styles in a project or styleguide..
 | context | <code>[Context](context.md)</code> |
 
 <a name="Extension+exportColors"></a>
-### extension.exportColors(context) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) |  [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
+### extension.exportColors(context) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) |  [<code>Array&lt;CodeExportObject&gt;</code>](#CodeExportObject)
 Generates code export objects from colors in a project or styleguide.
 
 **Kind**: instance method of [<code>Extension</code>](#Extension)
@@ -82,8 +94,18 @@ Generates code export objects from colors in a project or styleguide.
 | context | <code>[Context](context.md)</code> |
 
 <a name="Extension+exportTextStyles"></a>
-### extension.exportTextStyles(context) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) |  [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
+### extension.exportTextStyles(context) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) |  [<code>Array&lt;CodeExportObject&gt;</code>](#CodeExportObject)
 Generates code export objects from text styles in a project or styleguide.
+
+**Kind**: instance method of [<code>Extension</code>](#Extension)
+
+| Param | Type |
+| --- | --- |
+| context | <code>[Context](context.md)</code> |
+
+<a name="Extension+exportSpacing"></a>
+### extension.exportSpacing(context) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) |  [<code>Array&lt;CodeExportObject&gt;</code>](#CodeExportObject)
+Generates code export objects from spacing in a project or styleguide.
 
 **Kind**: instance method of [<code>Extension</code>](#Extension)
 
@@ -100,7 +122,7 @@ Generates code export objects from text styles in a project or styleguide.
 | Param | Type |
 | --- | --- |
 | context | <code>[Context](context.md)</code> |
-| colors | [<code>Array.&lt;Color&gt;</code>](color.md) |
+| colors | [<code>Array&lt;Color&gt;</code>](color.md) |
 
 <a name="Extension+styleguideTextStyles"></a>
 ### extension.styleguideTextStyles(context, textStyles) ⇒ <code>String</code> \| [<code>CodeObject</code>](#CodeObject)
@@ -111,7 +133,7 @@ Generates code export objects from text styles in a project or styleguide.
 | Param | Type |
 | --- | --- |
 | context | <code>[Context](context.md)</code> |
-| textStyles | [<code>Array.&lt;TextStyle&gt;</code>](textStyle.md) |
+| textStyles | [<code>Array&lt;TextStyle&gt;</code>](textStyle.md) |
 
 <a name="Extension+comment"></a>
 ### extension.comment(context, text) ⇒ <code>String</code>
@@ -127,7 +149,7 @@ Generates code export objects from text styles in a project or styleguide.
 | text | <code>String</code> |
 
 <a name="Extension+exportStyleguideColors"></a>
-### extension.exportStyleguideColors(context, colors) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) |  [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
+### extension.exportStyleguideColors(context, colors) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) |  [<code>Array&lt;CodeExportObject&gt;</code>](#CodeExportObject)
 *DEPRECATED* - See <code>[Extension.exportColors](#Extension+exportColors)</code>.<br>Generates code export objects from Styleguide colors.
 
 **Kind**: instance method of [<code>Extension</code>](#Extension)
@@ -135,10 +157,10 @@ Generates code export objects from text styles in a project or styleguide.
 | Param | Type |
 | --- | --- |
 | context | <code>[Context](context.md)</code> |
-| colors | [<code>Array.&lt;Color&gt;</code>](color.md) |
+| colors | [<code>Array&lt;Color&gt;</code>](color.md) |
 
 <a name="Extension+exportStyleguideTextStyles"></a>
-### extension.exportStyleguideTextStyles(context, textStyles) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) |  [<code>Array.&lt;CodeExportObject&gt;</code>](#CodeExportObject)
+### extension.exportStyleguideTextStyles(context, textStyles) ⇒ [<code>CodeExportObject</code>](#CodeExportObject) |  [<code>Array&lt;CodeExportObject&gt;</code>](#CodeExportObject)
 *DEPRECATED* - See <code>[Extension.exportTextStyles](#Extension+exportTextStyles)</code>.<br>Generates code export objects from Styleguide text styles.
 
 **Kind**: instance method of [<code>Extension</code>](#Extension)
@@ -146,7 +168,7 @@ Generates code export objects from text styles in a project or styleguide.
 | Param | Type |
 | --- | --- |
 | context | <code>[Context](context.md)</code> |
-| textStyles | [<code>Array.&lt;TextStyle&gt;</code>](textStyle.md) |
+| textStyles | [<code>Array&lt;TextStyle&gt;</code>](textStyle.md) |
 
 <a name="CodeObject"></a>
 ## CodeObject : <code>Object</code>

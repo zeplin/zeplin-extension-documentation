@@ -6,21 +6,21 @@
     * [.type](#Layer+type) : <code>String</code>
     * [.name](#Layer+name) : <code>String</code>
     * [.rect](#Layer+rect) : <code>Object</code>
-    * [.fills](#Layer+fills) : [<code>Array.&lt;Fill&gt;</code>](fill.md)
-    * [.borders](#Layer+borders) : [<code>Array.&lt;Border&gt;</code>](border.md)
-    * [.shadows](#Layer+shadows) : [<code>Array.&lt;Shadow&gt;</code>](shadow.md)
+    * [.fills](#Layer+fills) : [<code>Array&lt;Fill&gt;</code>](fill.md)
+    * [.borders](#Layer+borders) : [<code>Array&lt;Border&gt;</code>](border.md)
+    * [.shadows](#Layer+shadows) : [<code>Array&lt;Shadow&gt;</code>](shadow.md)
     * [.blur](#Layer+blur) : [<code>Blur</code>](blur.md)
     * [.opacity](#Layer+opacity) : <code>Number</code>
     * [.blendMode](#Layer+blendMode) : [<code>Fill.BLEND_MODES</code>](fill.md)
     * [.borderRadius](#Layer+borderRadius) : <code>Number</code>
     * [.rotation](#Layer+rotation) : <code>Number</code>
     * [.exportable](#Layer+exportable) : <code>Boolean</code>
-    * [.assets](#Layer+assets) : <code>Array.&lt;Object&gt;</code>
+    * [.assets](#Layer+assets) : <code>Array&lt;Object&gt;</code>
     * [.parent](#Layer+parent) : [<code>Layer</code>](#Layer)
     * [.version](#Layer+version) : [<code>Version</code>](version.md)
     * [.content](#Layer+content) : <code>String</code>
-    * [.textStyles](#Layer+textStyles) : <code>Array.&lt;Object&gt;</code>
-    * [.layers](#Layer+layers) : [<code>Array.&lt;Layer&gt;</code>](layer.md)
+    * [.textStyles](#Layer+textStyles) : <code>Array&lt;Object&gt;</code>
+    * [.layers](#Layer+layers) : [<code>Array&lt;Layer&gt;</code>](layer.md)
     * [.componentName](#Layer+componentName) : <code>String</code>
 
 <a name="Layer+type"></a>
@@ -51,19 +51,19 @@ Bounding rectangle of the layer.
 | height | <code>Number</code> |
 
 <a name="Layer+fills"></a>
-### layer.fills : [<code>Array.&lt;Fill&gt;</code>](fill.md)
+### layer.fills : [<code>Array&lt;Fill&gt;</code>](fill.md)
 Fills applied to the layer.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
 
 <a name="Layer+borders"></a>
-### layer.borders : [<code>Array.&lt;Border&gt;</code>](border.md)
+### layer.borders : [<code>Array&lt;Border&gt;</code>](border.md)
 Borders of the layer.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
 
 <a name="Layer+shadows"></a>
-### layer.shadows : [<code>Array.&lt;Shadow&gt;</code>](shadow.md)
+### layer.shadows : [<code>Array&lt;Shadow&gt;</code>](shadow.md)
 Shadows applied to the layer.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
@@ -105,7 +105,7 @@ Indicates whether the layer has assets or not.
 **Kind**: instance property of [<code>Layer</code>](#Layer)
 
 <a name="Layer+assets"></a>
-### layer.assets : <code>Array.&lt;Object&gt;</code>
+### layer.assets : <code>Array&lt;Object&gt;</code>
 Assets of the layer.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
@@ -136,7 +136,7 @@ Text of the text layer.
 **Kind**: instance property of [<code>Layer</code>](#Layer)
 
 <a name="Layer+textStyles"></a>
-### layer.textStyles : <code>Array.&lt;Object&gt;</code>
+### layer.textStyles : <code>Array&lt;Object&gt;</code>
 Text styles of the text layer, with ranges.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
@@ -151,7 +151,7 @@ Text styles of the text layer, with ranges.
 | textStyle | [<code>TextStyle</code>](textStyle.md) |
 
 <a name="Layer+layers"></a>
-### layer.layers : [<code>Array.&lt;Layer&gt;</code>](layer.md)
+### layer.layers : [<code>Array&lt;Layer&gt;</code>](layer.md)
 Child layers of the group layer.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)

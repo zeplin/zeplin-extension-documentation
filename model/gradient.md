@@ -6,7 +6,7 @@
     * [.type](#Gradient+type) : <code>String</code>
     * [.angle](#Gradient+angle) : <code>Number</code>
     * [.scale](#Gradient+scale) : <code>Number</code>
-    * [.colorStops](#Gradient+colorStops) : [<code>Array.&lt;ColorStop&gt;</code>](colorStop.md)
+    * [.colorStops](#Gradient+colorStops) : [<code>Array&lt;ColorStop&gt;</code>](colorStop.md)
 
 <a name="Gradient+type"></a>
 
@@ -28,7 +28,7 @@ Scale of the gradient.
 **Kind**: instance property of [<code>Gradient</code>](#Gradient)
 <a name="Gradient+colorStops"></a>
 
-### gradient.colorStops : [<code>Array.&lt;ColorStop&gt;</code>](colorStop.md)
+### gradient.colorStops : [<code>Array&lt;ColorStop&gt;</code>](colorStop.md)
 Color stops of the gradient.
 
 **Kind**: instance property of [<code>Gradient</code>](#Gradient)

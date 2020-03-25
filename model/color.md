@@ -108,4 +108,4 @@ Blends multiple colors.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| colors | [<code>Array.&lt;Color&gt;</code>](#Color) | List of color objects to be blended. |
+| colors | [<code>Array&lt;Color&gt;</code>](#Color) | List of color objects to be blended. |
