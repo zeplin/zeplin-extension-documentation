@@ -91,6 +91,8 @@ Quickly jump to the documentation of a particular model to learn more about it.
 - [`Border`](model/border.md)
 - [`Shadow`](model/shadow.md)
 - [`Blur`](model/blur.md)
+- [`SpacingSection`](model/spacingSection.md)
+- [`SpacingToken`](model/spacingToken.md)
 
 ## Publishing an extension
 
