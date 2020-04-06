@@ -12,7 +12,8 @@
     * [.densityDivisor](#Project+densityDivisor) : <code>Number</code>
     * [.lengthUnit](#Project+lengthUnit) : <code>String</code>
     * [.textLengthUnit](#Project+textLengthUnit) : <code>String</code>
-    * [.linkedStyleguide](#Project+linkedStyleguide) : <code>Styleguide</code>
+    * [.linkedStyleguide](#Project+linkedStyleguide) : <code>Styleguide?</code>
+    * [.remPreferences](#Project+remPreferences) : <code>RemPreferences?</code>
     * [.findTextStyleByName(name, useLinkedStyleguides = true)](#Project+findTextStyleByName) ⇒ [<code>TextStyle</code>](textStyle.md)
     * [.findTextStyleEqual(textStyle, useLinkedStyleguides = true)](#Project+findTextStyleEqual) ⇒ [<code>TextStyle</code>](textStyle.md)
     * [.findColorByName(name, useLinkedStyleguides = true)](#Project+findColorByName) ⇒ [<code>Color</code>](color.md)
@@ -88,6 +89,13 @@ Text length unit of the project, based on the type, e.g. `dp` for Android.
 <a name="Project+linkedStyleguide"></a>
 ### project.linkedStyleguide : [<code>Styleguide?</code>](styleguide.md)
 Styleguide linked to the project.
+
+**Kind**: instance property of [<code>Project</code>](#Project)
+
+
+<a name="Project+remPreferences"></a>
+### project.remPreferences : [<code>RemPreferences?</code>](remPreferences.md)
+Rem preferences of the project. If the rem is disabled the value is `undefined`.
 
 **Kind**: instance property of [<code>Project</code>](#Project)
 

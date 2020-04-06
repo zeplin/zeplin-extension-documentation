@@ -13,6 +13,7 @@
     * [.densityDivisor](#Styleguide+densityDivisor) : <code>Number</code>
     * [.lengthUnit](#Styleguide+lengthUnit) : <code>String</code>
     * [.textLengthUnit](#Styleguide+textLengthUnit) : <code>String</code>
+    * [.remPreferences](#Project+remPreferences) : <code>RemPreferences?</code>
     * [.findTextStyleByName(name, useParentStyleguides = true)](#Styleguide+findTextStyleByName) ⇒ [<code>TextStyle</code>](textStyle.md)
     * [.findTextStyleEqual(textStyle, useParentStyleguides = true)](#Styleguide+findTextStyleEqual) ⇒ [<code>TextStyle</code>](textStyle.md)
     * [.findColorByName(name, useParentStyleguides = true)](#Styleguide+findColorByName) ⇒ [<code>Color</code>](color.md)
@@ -90,6 +91,11 @@ Length unit of the styleguide, based on the type, e.g. `px` for Web, `pt` for iO
 Text length unit of the styleguide, based on the type, e.g. `dp` for Android.
 
 **Kind**: instance property of [<code>Styleguide</code>](#Styleguide)
+
+
+<a name="Styleguide+remPreferences"></a>
+### Styleguide.remPreferences : [<code>RemPreferences?</code>](remPreferences.md)
+Rem preferences of the styleguide. If the rem is disabled the value is `undefined`.
 
 
 <a name="Styleguide+findTextStyleByName"></a>
