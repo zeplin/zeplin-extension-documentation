@@ -13,7 +13,7 @@
     * [.lengthUnit](#Project+lengthUnit) : <code>String</code>
     * [.textLengthUnit](#Project+textLengthUnit) : <code>String</code>
     * [.linkedStyleguide](#Project+linkedStyleguide) : <code>Styleguide?</code>
-    * [.remPreferences](#Project+remPreferences) : <code>RemPreferences?</code>
+    * [.remPreferences](#Project+remPreferences) : [<code>RemPreferences?</code>](remPreferences.md)
     * [.findTextStyleByName(name, useLinkedStyleguides = true)](#Project+findTextStyleByName) ⇒ [<code>TextStyle</code>](textStyle.md)
     * [.findTextStyleEqual(textStyle, useLinkedStyleguides = true)](#Project+findTextStyleEqual) ⇒ [<code>TextStyle</code>](textStyle.md)
     * [.findColorByName(name, useLinkedStyleguides = true)](#Project+findColorByName) ⇒ [<code>Color</code>](color.md)
