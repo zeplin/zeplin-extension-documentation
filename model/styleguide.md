@@ -13,6 +13,7 @@
     * [.densityDivisor](#Styleguide+densityDivisor) : <code>Number</code>
     * [.lengthUnit](#Styleguide+lengthUnit) : <code>String</code>
     * [.textLengthUnit](#Styleguide+textLengthUnit) : <code>String</code>
+    * [.remPreferences](#Project+remPreferences) : [<code>RemPreferences?</code>](remPreferences.md)
     * [.findTextStyleByName(name, useParentStyleguides = true)](#Styleguide+findTextStyleByName) ⇒ [<code>TextStyle</code>](textStyle.md)
     * [.findTextStyleEqual(textStyle, useParentStyleguides = true)](#Styleguide+findTextStyleEqual) ⇒ [<code>TextStyle</code>](textStyle.md)
     * [.findColorByName(name, useParentStyleguides = true)](#Styleguide+findColorByName) ⇒ [<code>Color</code>](color.md)
@@ -88,6 +89,13 @@ Length unit of the styleguide, based on the type, e.g. `px` for Web, `pt` for iO
 <a name="Styleguide+textLengthUnit"></a>
 ### styleguide.textLengthUnit : <code>String</code>
 Text length unit of the styleguide, based on the type, e.g. `dp` for Android.
+
+**Kind**: instance property of [<code>Styleguide</code>](#Styleguide)
+
+
+<a name="Styleguide+remPreferences"></a>
+### Styleguide.remPreferences : [<code>RemPreferences?</code>](remPreferences.md)
+rem preferences of the styleguide (web styleguides only). This property exists only if rem is enabled for the styleguide.
 
 **Kind**: instance property of [<code>Styleguide</code>](#Styleguide)
 
@@ -176,4 +184,3 @@ Finds spacing token in the styleguide or in the parent styleguides (if useParent
 | --- | --- | --- |
 | name | <code>String</code> |  |
 | useParentStyleguides | <code>Boolean</code> | Whether parent styleguides should be included in the search. Defaults to `true`. |
-
