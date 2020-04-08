@@ -9,20 +9,20 @@
 
 <a name="RemPreferences+useForFontSizes"></a>
 ### remPreferences.useForFontSizes : <code>Boolean</code>
-Indicates whether the rem is enabled for font sizes or not.
+Whether rem unit is used for font sizes.
 
 **Kind**: instance property of [<code>RemPreferences</code>](#RemPreferences)
 
 
 <a name="RemPreferences+useForMeasurements"></a>
 ### remPreferences.useForMeasurements : <code>Boolean</code>
-Indicates whether the rem is enabled for measurement (e.g. width and height) or not.
+Whether rem unit is used for measurements (e.g. width, height, etc.).
 
 **Kind**: instance property of [<code>RemPreferences</code>](#RemPreferences)
 
 
 <a name="RemPreferences+rootFontSize"></a>
 ### remPreferences.rootFontSize : <code>Number</code>
-The value of root font size
+The value of the root element's font size.
 
 **Kind**: instance property of [<code>RemPreferences</code>](#RemPreferences)

@@ -95,7 +95,7 @@ Text length unit of the styleguide, based on the type, e.g. `dp` for Android.
 
 <a name="Styleguide+remPreferences"></a>
 ### Styleguide.remPreferences : [<code>RemPreferences?</code>](remPreferences.md)
-Rem preferences of the styleguide. If the rem is disabled the value is `undefined`.
+rem preferences of the styleguide (web styleguides only). This property exists only if rem is enabled for the styleguide.
 
 **Kind**: instance property of [<code>Styleguide</code>](#Styleguide)
 
@@ -184,4 +184,3 @@ Finds spacing token in the styleguide or in the parent styleguides (if useParent
 | --- | --- | --- |
 | name | <code>String</code> |  |
 | useParentStyleguides | <code>Boolean</code> | Whether parent styleguides should be included in the search. Defaults to `true`. |
-

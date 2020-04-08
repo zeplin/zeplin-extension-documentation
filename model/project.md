@@ -95,7 +95,7 @@ Styleguide linked to the project.
 
 <a name="Project+remPreferences"></a>
 ### project.remPreferences : [<code>RemPreferences?</code>](remPreferences.md)
-Rem preferences of the project. If the rem is disabled the value is `undefined`.
+rem preferences of the project (web projects only). This property exists only if rem is enabled for the project.
 
 **Kind**: instance property of [<code>Project</code>](#Project)
 
