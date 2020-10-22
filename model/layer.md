@@ -59,8 +59,8 @@ Bounding rectangle of the layer.
 | height | <code>Number</code> |
 
 <a name="Layer+layout"></a>
-### layer.fills : [<code>Layout</code>](layout.md)
-layout properties of the layer.
+### layer.layout : [<code>Layout</code>](layout.md)
+Layout properties of the layer.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
 

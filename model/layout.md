@@ -3,17 +3,22 @@
 
 <a name="Layout"></a>
 * [Layout](#Layout)
-    * [.direction](#Layout+direction) : <code>String</code>
-    * [.padding](#Layout+padding) : <code>Object</code>
-    * [.gap](#Layout+gap) : <code>Number</code>
-    * [.sizingMode](#Layout+sizingMode) : <code>String</code>
-    * [.alignment](#Layout+alignment) : <code>String</code>
+    * _instance_
+        * [.direction](#Layout+direction) : [<code>DIRECTION</code>](#Fill+DIRECTION)
+        * [.padding](#Layout+padding) : <code>Object</code>
+        * [.gap](#Layout+gap) : <code>Number</code>
+        * [.sizingMode](#Layout+sizingMode) : [<code>SIZING_MODE</code>](#Fill+SIZING_MODE)
+        * [.alignment](#Layout+alignment) : [<code>ALIGNMENT</code>](#Fill+ALIGNMENT)
+    * _static_
+        * [.DIRECTION](#Layout.DIRECTION) : <code>enum</code>
+        * [.SIZING_MODE](#Layout.SIZING_MODE) : <code>enum</code>
+        * [.ALIGNMENT](#Layout.ALIGNMENT) : <code>enum</code>
 
 <a name="Layout+direction"></a>
 ### layout.direction : <code>String</code>
 Determines how the children of the layer are laid out in this layer:
- - "row": The children are placed on a line horizontally
- - "column": The children are stacked vertically
+ - `"row"`: The children are placed on a line horizontally
+ - `"column"`: The children are stacked vertically
 
 **Kind**: instance property of [<code>Layout</code>](#Layout)
 
@@ -46,8 +51,54 @@ Determines if the layer has fixed or automatic length for its axis which is orth
 ### layout.alignment : <code>String</code>
 Determines how the children are aligned inside the layer.
 
-- When layout direction is `"row"`, `"min"` and `"max"` correspond to `"top"` and `"bottom"`.
-- When layout direction is `"column"`, `"min"` and `"max"` correspond to `"left"` and `"right"`.
-- Setting `"stretch"` will make the node `"stretch"` to fill the width of layers with `"column"` direction, or the height of layers with `"row"` direction.
+When layout direction is `"row"`:
+- `"min"`: Align the children to the top of the layer
+- `"max"`: Align the children to the bottom of the layer 
+- `"stretch"`: Stretch the children to fill the height of the layer 
+- `"center"`: Vertically center the children
+
+When layout direction is `"column"`:
+- `"min"`: Align the children to the left of the layer
+- `"max"`: Align the children to the right of the layer 
+- `"stretch"`: Stretch the children to fill the width of the layer 
+- `"center"`: Horizontally center the children
 
 **Kind**: instance property of [<code>Layout</code>](#Layout)
+
+<a name="Layout+DIRECTION"></a>
+### Layout.DIRECTION : <code>enum</code>
+Directions for a layout.
+
+**Kind**: static enum of [<code>Layout</code>](#Layout)
+**Properties**
+
+| Name | Type | Default |
+| --- | --- | --- |
+| ROW | <code>String</code> | <code>row</code> |
+| COLUMN | <code>String</code> | <code>column</code> |
+
+<a name="Layout+SIZING_MODE"></a>
+### Layout.SIZING_MODE : <code>enum</code>
+Sizing mode for a layout.
+
+**Kind**: static enum of [<code>Layout</code>](#Layout)
+**Properties**
+
+| Name | Type | Default |
+| --- | --- | --- |
+| FIXED | <code>String</code> | <code>fixed</code> |
+| AUTO | <code>String</code> | <code>auto</code> |
+
+<a name="Layout+ALIGNMENT"></a>
+### Layout.ALIGNMENT : <code>enum</code>
+Alignment for a layout.
+
+**Kind**: static enum of [<code>Layout</code>](#Layout)
+**Properties**
+
+| Name | Type | Default |
+| --- | --- | --- |
+| MIN | <code>String</code> | <code>min</code> |
+| CENTER | <code>String</code> | <code>center</code> |
+| MAX | <code>String</code> | <code>max</code> |
+| STRETCH | <code>String</code> | <code>stretch</code> |
