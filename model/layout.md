@@ -4,11 +4,11 @@
 <a name="Layout"></a>
 * [Layout](#Layout)
     * _instance_
-        * [.direction](#Layout+direction) : [<code>DIRECTION</code>](#Fill+DIRECTION)
+        * [.direction](#Layout+direction) : [<code>DIRECTION</code>](#Layout+DIRECTION)
         * [.padding](#Layout+padding) : <code>Object</code>
         * [.gap](#Layout+gap) : <code>Number</code>
-        * [.sizingMode](#Layout+sizingMode) : [<code>SIZING_MODE</code>](#Fill+SIZING_MODE)
-        * [.alignment](#Layout+alignment) : [<code>ALIGNMENT</code>](#Fill+ALIGNMENT)
+        * [.sizingMode](#Layout+sizingMode) : [<code>SIZING_MODE</code>](#Layout+SIZING_MODE)
+        * [.alignment](#Layout+alignment) : [<code>ALIGNMENT</code>](#Layout+ALIGNMENT)
     * _static_
         * [.DIRECTION](#Layout.DIRECTION) : <code>enum</code>
         * [.SIZING_MODE](#Layout.SIZING_MODE) : <code>enum</code>
