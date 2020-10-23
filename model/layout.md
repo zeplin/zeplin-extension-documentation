@@ -4,11 +4,11 @@
 <a name="Layout"></a>
 * [Layout](#Layout)
     * _instance_
-        * [.direction](#Layout+direction) : [<code>DIRECTION</code>](#Layout+DIRECTION)
+        * [.direction](#Layout+direction) : [<code>DIRECTION</code>](#Layout.DIRECTION)
         * [.padding](#Layout+padding) : <code>Object</code>
         * [.gap](#Layout+gap) : <code>Number</code>
-        * [.sizingMode](#Layout+sizingMode) : [<code>SIZING_MODE</code>](#Layout+SIZING_MODE)
-        * [.alignment](#Layout+alignment) : [<code>ALIGNMENT</code>](#Layout+ALIGNMENT)
+        * [.sizingMode](#Layout+sizingMode) : [<code>SIZING_MODE</code>](#Layout.SIZING_MODE)
+        * [.alignment](#Layout+alignment) : [<code>ALIGNMENT</code>](#Layout.ALIGNMENT)
     * _static_
         * [.DIRECTION](#Layout.DIRECTION) : <code>enum</code>
         * [.SIZING_MODE](#Layout.SIZING_MODE) : <code>enum</code>
@@ -65,7 +65,7 @@ When layout direction is `"column"`:
 
 **Kind**: instance property of [<code>Layout</code>](#Layout)
 
-<a name="Layout+DIRECTION"></a>
+<a name="Layout.DIRECTION"></a>
 ### Layout.DIRECTION : <code>enum</code>
 Directions for a layout.
 
@@ -77,7 +77,7 @@ Directions for a layout.
 | ROW | <code>String</code> | <code>row</code> |
 | COLUMN | <code>String</code> | <code>column</code> |
 
-<a name="Layout+SIZING_MODE"></a>
+<a name="Layout.SIZING_MODE"></a>
 ### Layout.SIZING_MODE : <code>enum</code>
 Sizing mode for a layout.
 
@@ -89,7 +89,7 @@ Sizing mode for a layout.
 | FIXED | <code>String</code> | <code>fixed</code> |
 | AUTO | <code>String</code> | <code>auto</code> |
 
-<a name="Layout+ALIGNMENT"></a>
+<a name="Layout.ALIGNMENT"></a>
 ### Layout.ALIGNMENT : <code>enum</code>
 Alignment for a layout.
 
