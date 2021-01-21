@@ -24,6 +24,7 @@
     * [.textStyles](#Layer+textStyles) : <code>Array&lt;Object&gt;</code>
     * [.layers](#Layer+layers) : [<code>Array&lt;Layer&gt;</code>](layer.md)
     * [.componentName](#Layer+componentName) : <code>String</code>
+    * [.inspectable](#Layer+inspectable) : <code>Boolean</code>
 
 <a name="Layer+type"></a>
 ### layer.type : <code>String</code>
@@ -173,5 +174,11 @@ Child layers of the group layer.
 <a name="Layer+componentName"></a>
 ### layer.componentName : <code>String</code>
 Name of the component the group layer is referencing.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+inspectable"></a>
+### layer.inspectable : <code>Boolean</code>
+Whether the layer is inspectable in Zeplin.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
