@@ -81,6 +81,7 @@ Quickly jump to the documentation of a particular model to learn more about it.
 - [`Styleguide`](model/styleguide.md)
 - [`Screen`](model/screen.md)
 - [`Component`](model/component.md)
+- [`ComponentVariant`](model/componentVariant.md)
 - [`Version`](model/version.md)
 - [`Color`](model/color.md)
 - [`Gradient`](model/gradient.md)

@@ -4,7 +4,7 @@
 <a name="Screen"></a>
 * [Screen](#Screen)
     * [.name](#Screen+name) : <code>String</code>
-    * [.description](#Screen+desciption) : <code>String</code>
+    * [.description](#Screen+description) : <code>String</code>
     * [.tags](#Screen+tags) : <code>Array&lt;String&gt;</code>
 
 See [`Version`](version.md) for properties of a screen that change over time, like `layers`, `image` and so on.
