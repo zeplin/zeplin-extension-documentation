@@ -5,10 +5,13 @@
 * [Color](#Color)
     * _instance_
         * [.name](#Color+name) : <code>String</code>
+        * [.originalName](#Color+originalName) : <code>String</code>
         * [.r](#Color+r) : <code>Number</code>
         * [.g](#Color+g) : <code>Number</code>
         * [.b](#Color+b) : <code>Number</code>
         * [.a](#Color+a) : <code>Number</code>
+        * [.sourceId](#Color+sourceId) : <code>String</code>
+        * [.getFormattedName(namingScheme)](#Color+getFormattedName) ⇒ <code>String</code>
         * [.equals(c)](#Color+equals) ⇒ <code>Boolean</code>
         * [.blend(c)](#Color+blend) ⇒ [<code>Color</code>](#Color)
         * [.toHex()](#Color+toHex) ⇒ <code>Object</code>
@@ -19,6 +22,12 @@
 <a name="Color+name"></a>
 
 ### color.name : <code>String</code>
+`[DEPRECARED]` Formatted name of the color, only exists on project colors. Please use [`Color.originalName`](#Color+originalName) and [`Color.getFormattedName`](#Color+getFormattedName) instead.
+
+**Kind**: instance property of [<code>Color</code>](#Color)
+<a name="Color+originalName"></a>
+
+### color.originalName : <code>String</code>
 Name of the color, only exists on project colors. To check if a color (e.g. from a layer) exists in the project, see [`Project.findColorEqual`](project.md#Project+findColorEqual).
 
 **Kind**: instance property of [<code>Color</code>](#Color)
@@ -46,6 +55,12 @@ Blue component of the color, [0, 255].
 Alpha component of the color, [0, 1].
 
 **Kind**: instance property of [<code>Color</code>](#Color)
+<a name="Color+sourceId"></a>
+
+### color.sourceId : <code>String</code>
+Id of the color in the source design document.
+
+**Kind**: instance property of [<code>Color</code>](#Color)
 <a name="Color+equals"></a>
 
 ### color.equals(c) ⇒ <code>Boolean</code>
@@ -56,6 +71,16 @@ Checks whether another color is equal to this one.
 | Param | Type | Description |
 | --- | --- | --- |
 | c | [<code>Color</code>](#Color) | Color object to be compared. |
+<a name="Color+getFormattedName"></a>
+
+### color.getFormattedName(namingScheme) ⇒ <code>String</code>
+Formats name according to provided naming scheme.
+
+**Kind**: instance method of [<code>Color</code>](#Color)
+
+| Param | Type | Description |
+| --- | --- | --- |
+| namingScheme |`"snake"\|"camel"\|"pascal"\|"kebab"\|"constant"` | naming scheme to format the name. "constant" by default. |
 
 <a name="Color+blend"></a>
 

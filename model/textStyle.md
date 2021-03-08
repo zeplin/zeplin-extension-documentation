@@ -4,6 +4,7 @@
 <a name="TextStyle"></a>
 * [TextStyle](#TextStyle)
     * [.name](#TextStyle+name) : <code>String</code>
+    * [.sourceId](#TextStyle+sourceId) : <code>String</code>
     * [.fontFace](#TextStyle+fontFace) : <code>String</code>
     * [.fontSize](#TextStyle+fontSize) : <code>Number</code>
     * [.fontWeight](#TextStyle+fontWeight) : <code>Number</code>
@@ -21,6 +22,13 @@
 
 ### textStyle.name : <code>String</code>
 Name of the text style, only exists on project text styles. To check if a text style (e.g. from a layer) exists in the project, see [`Project.findTextStyleEqual`](project.md#Project+findTextStyleEqual).
+
+**Kind**: instance property of [<code>TextStyle</code>](#TextStyle)
+
+<a name="TextStyle+sourceId"></a>
+
+### textStyle.sourceId : <code>String</code>
+Id of the text style in the source design document.
 
 **Kind**: instance property of [<code>TextStyle</code>](#TextStyle)
 <a name="TextStyle+fontFace"></a>
