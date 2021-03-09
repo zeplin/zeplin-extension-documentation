@@ -74,13 +74,13 @@ Checks whether another color is equal to this one.
 <a name="Color+getFormattedName"></a>
 
 ### color.getFormattedName(namingScheme) ⇒ <code>String</code>
-Formats name according to provided naming scheme.
+Formats the original name according to the provided naming scheme.
 
 **Kind**: instance method of [<code>Color</code>](#Color)
 
 | Param | Type | Description |
 | --- | --- | --- |
-| namingScheme |`"snake"\|"camel"\|"pascal"\|"kebab"\|"constant"` | naming scheme to format the name. "constant" by default. |
+| namingScheme |`"snake" \| "camel" \| "pascal" \| "kebab" \| "constant"` | Naming scheme to format the name (`"constant"` by default). |
 
 <a name="Color+blend"></a>
 
