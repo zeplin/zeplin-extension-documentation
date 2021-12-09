@@ -4,6 +4,7 @@
 <a name="Component"></a>
 * [Component](#Component)
     * [.name](#Component+name) : <code>String</code>
+    * [.sourceId](#Component+sourceId) : <code>String</code>
     * [.description](#Component+description) : <code>String</code>
     * [.latestVersion](#Component+latestVersion) : [<code>Version</code>](version.md)
     * [.properties](#Component+properties) : [<code>Array&lt;ComponentProperty&gt;</code>](#ComponentProperty)
@@ -16,6 +17,12 @@ See [`Version`](version.md) for properties of a component that change over time,
 <a name="Component+name"></a>
 ### component.name : <code>String</code>
 Name of the component.
+
+**Kind**: instance property of [<code>Component</code>](#Component)
+
+<a name="Component+sourceId"></a>
+### component.sourceId : <code>String</code>
+Identifier of the component in the source design document.
 
 **Kind**: instance property of [<code>Component</code>](#Component)
 
