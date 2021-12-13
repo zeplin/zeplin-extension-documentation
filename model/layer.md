@@ -6,6 +6,7 @@
     * [.type](#Layer+type) : <code>String</code>
     * [.name](#Layer+name) : <code>String</code>
     * [.sourceId](#Layer+sourceId) : <code>String</code>
+    * [.componentSourceId](#Layer+componentSourceId) : <code>String</code>
     * [.rect](#Layer+rect) : <code>Object</code>
     * [.layout](#Layer+layout) : [<code>Layout</code>](layout.md)
     * [.fills](#Layer+fills) : [<code>Array&lt;Fill&gt;</code>](fill.md)
@@ -41,6 +42,12 @@ Name of the layer.
 <a name="Layer+sourceId"></a>
 ### layer.sourceId : <code>String</code>
 Id of the layer in the source design document.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+componentSourceId"></a>
+### layer.componentSourceId : <code>String</code>
+Id of the related component in the source design document.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
 

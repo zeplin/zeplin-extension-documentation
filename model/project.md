@@ -8,6 +8,7 @@
     * [.textStyles](#Project+textStyles) : [<code>Array&lt;TextStyle&gt;</code>](textStyle.md)
     * [.colors](#Project+colors) : [<code>Array&lt;Color&gt;</code>](color.md)
     * [.spacingSections](#Project+spacingSections) : [<code>Array&lt;SpacingSection&gt;</code>](spacingSection.md)
+    * [.components](#Project+components) : [<code>Array&lt;Component&gt;</code>](component.md)
     * [.density](#Project+density) : <code>String</code>
     * [.densityDivisor](#Project+densityDivisor) : <code>Number</code>
     * [.lengthUnit](#Project+lengthUnit) : <code>String</code>
@@ -21,6 +22,8 @@
     * [.findColorByHexAndAlpha(values, useLinkedStyleguides = true)](#Project+findColorByHexAndAlpha) ⇒ [<code>Color</code>](color.md)
     * [.findSpacingTokenByValue(value, useLinkedStyleguides = true)](#Project+findSpacingTokenByValue) ⇒ [<code>SpacingToken?</code>](spacingToken.md)
     * [.findSpacingTokenByName(name, useLinkedStyleguides = true)](#Project+findSpacingTokenByName) ⇒ [<code>SpacingToken?</code>](spacingToken.md)
+    * [.findComponentByName(name, useLinkedStyleguides = true)](#Project+findComponentByName) ⇒ [<code>Component?</code>](component.md)
+    * [.findComponentBySourceId(sourceId, useLinkedStyleguides = true)](#Project+findComponentBySourceId) ⇒ [<code>Component?</code>](component.md)
 
 
 <a name="Project+type"></a>
@@ -51,10 +54,16 @@ Colors in the project.
 **Kind**: instance property of [<code>Project</code>](#Project)
 
 
-
 <a name="Project+spacingSections"></a>
 ### project.spacingSections : [<code>Array&lt;SpacingSection&gt;</code>](spacingSection.md)
 Spacing sections in the project.
+
+**Kind**: instance property of [<code>Project</code>](#Project)
+
+
+<a name="Project+components"></a>
+### project.components : [<code>Array&lt;Component&gt;</code>](component.md)
+components in the project.
 
 **Kind**: instance property of [<code>Project</code>](#Project)
 
@@ -177,6 +186,30 @@ Finds spacing token in the project or in the linked styleguides (if useLinkedSty
 <a name="Project+findSpacingTokenByName"></a>
 ### project.findSpacingTokenByName(name, useLinkedStyleguides = true) ⇒ [<code>SpacingToken?</code>](spacingToken.md)
 Finds spacing token in the project or in the linked styleguides (if useLinkedStyleguides is true) by name.
+
+**Kind**: instance method of [<code>Project</code>](#Project)
+
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>String</code> |  |
+| useLinkedStyleguides | <code>Boolean</code> | Whether linked styleguides should be included in the search. Defaults to `true`. |
+
+
+<a name="Project+findComponentByName"></a>
+### project.findComponentByName(name, useLinkedStyleguides = true) ⇒ [<code>Component?</code>](component.md)
+Finds a component in the project or in the linked styleguides (if useLinkedStyleguides is true) by name.
+
+**Kind**: instance method of [<code>Project</code>](#Project)
+
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>String</code> |  |
+| useLinkedStyleguides | <code>Boolean</code> | Whether linked styleguides should be included in the search. Defaults to `true`. |
+
+
+<a name="Project+findComponentBySourceId"></a>
+### project.findComponentBySourceId(name, useLinkedStyleguides = true) ⇒ [<code>Component?</code>](component.md)
+Finds a component in the project or in the linked styleguides (if useLinkedStyleguides is true) by id in the source design document.
 
 **Kind**: instance method of [<code>Project</code>](#Project)
 
