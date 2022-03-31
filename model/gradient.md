@@ -7,6 +7,8 @@
     * [.angle](#Gradient+angle) : <code>Number</code>
     * [.scale](#Gradient+scale) : <code>Number</code>
     * [.colorStops](#Gradient+colorStops) : [<code>Array&lt;ColorStop&gt;</code>](colorStop.md)
+    * [.aspectRatio](#Gradient+aspectRatio) : <code>Number</code>
+
 
 <a name="Gradient+type"></a>
 
@@ -30,5 +32,11 @@ Scale of the gradient.
 
 ### gradient.colorStops : [<code>Array&lt;ColorStop&gt;</code>](colorStop.md)
 Color stops of the gradient.
+
+**Kind**: instance property of [<code>Gradient</code>](#Gradient)
+
+<a name="Gradient+aspectRatio"></a>
+### gradient.aspectRatio : <code>Number</code>
+Aspect ratio of the gradient.
 
 **Kind**: instance property of [<code>Gradient</code>](#Gradient)
