@@ -6,6 +6,7 @@
     * [.position](#Border+position) : <code>String</code>
     * [.thickness](#Border+thickness) : <code>Number</code>
     * [.fill](#Border+fill) : <code>Fill</code>
+    * [.dashPattern](#Border+dashPattern) : <code>DashPattern</code>
 
 <a name="Border+position"></a>
 
@@ -23,5 +24,11 @@ Thickness of the border, a positive integer.
 
 ### border.fill : [<code>Fill</code>](fill.md)
 Fill of the border.
+
+**Kind**: instance property of [<code>Border</code>](#Border)
+<a name="Border+dashPattern"></a>
+
+### border.dashPattern : [<code>DashPattern</code>](fill.md)
+Dash pattern of the border.
 
 **Kind**: instance property of [<code>Border</code>](#Border)

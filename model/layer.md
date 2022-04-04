@@ -26,6 +26,7 @@
     * [.layers](#Layer+layers) : [<code>Array&lt;Layer&gt;</code>](layer.md)
     * [.componentName](#Layer+componentName) : <code>String</code>
     * [.inspectable](#Layer+inspectable) : <code>Boolean</code>
+    * [.cornerRadius](#Layer+cornerRadius) : [<code>CornerRadius</code>](cornerRadius.md)
 
 <a name="Layer+type"></a>
 ### layer.type : <code>String</code>
@@ -187,5 +188,11 @@ Name of the component the group layer is referencing.
 <a name="Layer+inspectable"></a>
 ### layer.inspectable : <code>Boolean</code>
 Whether the layer is inspectable in Zeplin.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+cornerRadius"></a>
+### layer.cornerRadius : [<code>CornerRadius</code>](cornerRadius.md)
+Corner radius of the layer.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)

@@ -17,7 +17,11 @@
     * [.color](#TextStyle+color) : [<code>Color</code>](color.md)
     * [.weightText](#TextStyle+weightText) : <code>String</code>
     * [.equals(t)](#TextStyle+equals) ⇒ <code>Boolean</code>
-
+    * [.paragraphSpacing](#TextStyle+paragraphSpacing) : <code>Number</code>
+    * [.textDecoration](#TextStyle+textDecoration) : [<code>TextDecoration</code>](textDecoration.md)
+    * [.textTransform](#TextStyle+textTransform) : [<code>TEXT_TRANSFORM</code>](#TextStyle.TEXT_TRANSFORM)
+  * _static_
+    * [.TEXT_TRANSFORM](#TextStyle.TEXT_TRANSFORM) : <code>enum</code>
 <a name="TextStyle+name"></a>
 
 ### textStyle.name : <code>String</code>
@@ -107,3 +111,35 @@ Checks whether another text style. is equal to this one.
 | Param | Type | Description |
 | --- | --- | --- |
 | t | [<code>TextStyle</code>](#TextStyle) | TextStyle object to be compared. |
+
+
+<a name="TextStyle+paragraphSpacing"></a>
+### textStyle.paragraphSpacing : <code>Number</code>
+Paragraph spacing of the text style.
+
+**Kind**: instance property of [<code>TextStyle</code>](#TextStyle)
+
+<a name="TextStyle+textDecoration"></a>
+### textStyle.textDecoration : [<code>TextDecoration</code>](textDecoration.md)
+Text decoration of the text style.
+
+**Kind**: instance property of [<code>TextStyle</code>](#TextStyle)
+
+<a name="TextStyle+textTransform"></a>
+### textStyle.textTransform : [<code>TEXT_TRANSFORM</code>](#TextStyle.TEXT_TRANSFORM)
+Text transform of the text style.
+
+**Kind**: instance property of [<code>TextStyle</code>](#TextStyle)
+
+<a name="TextStyle.TEXT_TRANSFORM"></a>
+### TextStyle.TEXT_TRANSFORM : <code>enum</code>
+Text transforms for a text style.
+
+**Kind**: static enum of [<code>TextStyle</code>](#TextStyle)
+**Properties**
+
+| Name      | Type                | Default                |
+|-----------|---------------------|------------------------|
+| UPPERCASE | <code>String</code> | <code>uppercase</code> |
+| LOWERCASE | <code>String</code> | <code>lowercase</code> |
+| TITLECASE | <code>String</code> | <code>titlecase</code> |
