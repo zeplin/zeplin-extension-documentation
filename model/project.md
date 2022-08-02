@@ -17,6 +17,7 @@
     * [.remPreferences](#Project+remPreferences) : [<code>RemPreferences?</code>](remPreferences.md)
     * [.findTextStyleByName(name, useLinkedStyleguides = true)](#Project+findTextStyleByName) ⇒ [<code>TextStyle</code>](textStyle.md)
     * [.findTextStyleEqual(textStyle, useLinkedStyleguides = true)](#Project+findTextStyleEqual) ⇒ [<code>TextStyle</code>](textStyle.md)
+    * [.findBestConformingTextStyle(textStyle, useLinkedStyleguides = true)](#Project+findBestConformingTextStyle) ⇒ [<code>TextStyle</code>](textStyle.md)
     * [.findColorByName(name, useLinkedStyleguides = true)](#Project+findColorByName) ⇒ [<code>Color</code>](color.md)
     * [.findColorEqual(color, useLinkedStyleguides = true)](#Project+findColorEqual) ⇒ [<code>Color</code>](color.md)
     * [.findColorByHexAndAlpha(values, useLinkedStyleguides = true)](#Project+findColorByHexAndAlpha) ⇒ [<code>Color</code>](color.md)
@@ -124,6 +125,18 @@ Finds text style in the project or in the linked styleguides (if useLinkedStyleg
 <a name="Project+findTextStyleEqual"></a>
 ### project.findTextStyleEqual(textStyle, useLinkedStyleguides = true) ⇒ [<code>TextStyle?</code>](textStyle.md)
 Finds text style in the project or in the linked styleguides (if useLinkedStyleguides is true) equal to another text style.
+
+**Kind**: instance method of [<code>Project</code>](#Project)
+
+| Param | Type | Description |
+| --- | --- | --- |
+| textStyle | <code>TextStyle</code> |  |
+| useLinkedStyleguides | <code>Boolean</code> | Whether linked styleguides should be included in the search. Defaults to `true`. |
+
+
+<a name="Project+findBestConformingTextStyle"></a>
+### project.findBestConformingTextStyle(textStyle, useLinkedStyleguides = true) ⇒ [<code>TextStyle?</code>](textStyle.md)
+Finds best conforming text style in the project or in the linked styleguides (if useLinkedStyleguides is true).
 
 **Kind**: instance method of [<code>Project</code>](#Project)
 

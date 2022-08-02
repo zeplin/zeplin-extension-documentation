@@ -17,6 +17,7 @@
     * [.remPreferences](#Project+remPreferences) : [<code>RemPreferences?</code>](remPreferences.md)
     * [.findTextStyleByName(name, useParentStyleguides = true)](#Styleguide+findTextStyleByName) ⇒ [<code>TextStyle</code>](textStyle.md)
     * [.findTextStyleEqual(textStyle, useParentStyleguides = true)](#Styleguide+findTextStyleEqual) ⇒ [<code>TextStyle</code>](textStyle.md)
+    * [.findBestConformingTextStyle(textStyle, useParentStyleguides = true)](#Styleguide+findBestConformingTextStyle) ⇒ [<code>TextStyle</code>](textStyle.md)
     * [.findColorByName(name, useParentStyleguides = true)](#Styleguide+findColorByName) ⇒ [<code>Color</code>](color.md)
     * [.findColorEqual(color, useParentStyleguides = true)](#Styleguide+findColorEqual) ⇒ [<code>Color</code>](color.md)
     * [.findColorByHexAndAlpha(values, useParentStyleguides = true)](#Styleguide+findColorByHexAndAlpha) ⇒ [<code>Color</code>](color.md)
@@ -125,6 +126,18 @@ Finds text style in the styleguide or in the parent styleguides (if useParentSty
 <a name="Styleguide+findTextStyleEqual"></a>
 ### styleguide.findTextStyleEqual(textStyle, useParentStyleguides = true) ⇒ [<code>TextStyle?</code>](textStyle.md)
 Finds text style in the styleguide or in the parent styleguides (if useParentStyleguides is true) equal to another text style.
+
+**Kind**: instance method of [<code>Styleguide</code>](#Styleguide)
+
+| Param | Type | Description |
+| --- | --- | --- |
+| textStyle | <code>TextStyle</code> |  |
+| useParentStyleguides | <code>Boolean</code> | Whether parent styleguides should be included in the search. Defaults to `true`. |
+
+
+<a name="Styleguide+findBestConformingTextStyle"></a>
+### styleguide.findBestConformingTextStyle(textStyle, useParentStyleguides = true) ⇒ [<code>TextStyle?</code>](textStyle.md)
+Finds best conforming text style in the styleguide or in the parent styleguides (if useParentStyleguides is true).
 
 **Kind**: instance method of [<code>Styleguide</code>](#Styleguide)
 
