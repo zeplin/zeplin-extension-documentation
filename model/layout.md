@@ -8,7 +8,10 @@
         * [.padding](#Layout+padding) : <code>Object</code>
         * [.gap](#Layout+gap) : <code>Number</code>
         * [.sizingMode](#Layout+sizingMode) : [<code>SIZING_MODE</code>](#Layout.SIZING_MODE)
-        * [.alignment](#Layout+alignment) : [<code>ALIGNMENT</code>](#Layout.ALIGNMENT)
+        * [.itemAlignment](#Layout+itemAlignment) : [<code>ALIGNMENT</code>](#Layout.ALIGNMENT)
+        * [.distribution](#Layout+distribution) : [<code>DISTRIBUTION</code>](#Layout.DISTRIBUTION)
+        * [.wrap](#Layout+wrap) : <code>Boolean</code>
+        * [.wrapGap](#Layout+wrapGap) : <code>Number</code>
     * _static_
         * [.DIRECTION](#Layout.DIRECTION) : <code>enum</code>
         * [.SIZING_MODE](#Layout.SIZING_MODE) : <code>enum</code>
@@ -47,21 +50,52 @@ Determines if the layer has fixed or automatic length for its axis which is orth
 
 **Kind**: instance property of [<code>Layout</code>](#Layout)
 
-<a name="Layout+alignment"></a>
-### layout.alignment : <code>String</code>
-Determines how the children are aligned inside the layer.
+<a name="Layout+itemAlignment"></a>
+### layout.itemAlignment : <code>String</code>
+Determines how the children are aligned inside the layer in the counter axis direction.
 
 When layout direction is `"row"`:
 - `"min"`: Align the children to the top of the layer
-- `"max"`: Align the children to the bottom of the layer 
-- `"stretch"`: Stretch the children to fill the height of the layer 
+- `"max"`: Align the children to the bottom of the layer
 - `"center"`: Vertically center the children
+- `"baseline"`: Aligns all children along the text baseline
 
 When layout direction is `"column"`:
 - `"min"`: Align the children to the left of the layer
 - `"max"`: Align the children to the right of the layer 
-- `"stretch"`: Stretch the children to fill the width of the layer 
 - `"center"`: Horizontally center the children
+- `"baseline"`: NOT applicable for this direction
+
+**Kind**: instance property of [<code>Layout</code>](#Layout)
+
+<a name="Layout+distribution"></a>
+### layout.distribution : <code>String</code>
+Determines how the children should be aligned inside the layer in the primary axis direction.
+
+When layout direction is `"row"`:
+- `"min"`: Align the children to the left of the layer
+- `"max"`: Align the children to the right of the layer
+- `"center"`: Horizontally center the children
+- `"space-between"`: Align the children to space themselves evenly by putting the extra space between them
+
+When layout direction is `"column"`:
+- `"min"`: Align the children to the top of the layer
+- `"max"`: Align the children to the bottom of the layer
+- `"center"`: Vertically center the children
+- `"space-between"`: Align the children to space themselves evenly by putting the extra space between them
+
+
+**Kind**: instance property of [<code>Layout</code>](#Layout)
+
+<a name="Layout+wrap"></a>
+### layout.wrap : <code>Boolean</code>
+Indicates whether the children wraps if they don't fit the width/height.
+
+**Kind**: instance property of [<code>Layout</code>](#Layout)
+
+<a name="Layout+wrapGap"></a>
+### layout.wrapGap : <code>Number</code>
+Spacing in counter axis of the direction.
 
 **Kind**: instance property of [<code>Layout</code>](#Layout)
 
@@ -102,3 +136,19 @@ Alignment for a layout.
 | CENTER | <code>String</code> | <code>center</code> |
 | MAX | <code>String</code> | <code>max</code> |
 | STRETCH | <code>String</code> | <code>stretch</code> |
+| INHERIT | <code>String</code> | <code>inherit</code> |
+| BASELINE | <code>String</code> | <code>baseline</code> |
+
+<a name="Layout.DISTRIBUTION"></a>
+### Layout.DISTRIBUTION : <code>enum</code>
+Distribution for children of layout.
+
+**Kind**: static enum of [<code>Layout</code>](#Layout)
+**Properties**
+
+| Name | Type | Default |
+| --- | --- | --- |
+| CENTER | <code>String</code> | <code>center</code> |
+| MAX | <code>String</code> | <code>max</code> |
+| MIN | <code>String</code> | <code>min</code> |
+| SPACE_BETWEEN | <code>String</code> | <code>space-between</code> |

@@ -43,7 +43,6 @@ Opacity of the fill, [0, 1].
 Blend mode of the fill, defined in [BLEND_MODES](#Fill.BLEND_MODES).
 
 **Kind**: instance property of [<code>Fill</code>](#Fill)
-<a name="Fill+fill"></a>
 
 ### Fill.BLEND_MODES : <code>enum</code>
 Blend modes for a fill.
