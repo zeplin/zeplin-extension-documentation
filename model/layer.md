@@ -4,11 +4,15 @@
 <a name="Layer"></a>
 * [Layer](#Layer)
     * [.type](#Layer+type) : <code>String</code>
+    * [.shapeType](#Layer+shapeType) : <code>String</code>
     * [.name](#Layer+name) : <code>String</code>
     * [.sourceId](#Layer+sourceId) : <code>String</code>
     * [.componentSourceId](#Layer+componentSourceId) : <code>String</code>
     * [.rect](#Layer+rect) : <code>Object</code>
     * [.layout](#Layer+layout) : [<code>Layout</code>](layout.md)
+    * [.constraints](#Layer+constraints) : [<code>LayerConstraints</code>](layerConstraints.md)
+    * [.layoutAlignment](#Layer+layoutAlignment) : [<code>Layout.ALIGNMENT</code>](layout.md)
+    * [.layoutGrow](#Layer+layoutGrow) : [<code>Number</code>]
     * [.fills](#Layer+fills) : [<code>Array&lt;Fill&gt;</code>](fill.md)
     * [.borders](#Layer+borders) : [<code>Array&lt;Border&gt;</code>](border.md)
     * [.shadows](#Layer+shadows) : [<code>Array&lt;Shadow&gt;</code>](shadow.md)
@@ -27,10 +31,26 @@
     * [.componentName](#Layer+componentName) : <code>String</code>
     * [.inspectable](#Layer+inspectable) : <code>Boolean</code>
     * [.cornerRadius](#Layer+cornerRadius) : [<code>CornerRadius</code>](cornerRadius.md)
+    * [.styleName](#Layer+styleName) : <code>String</code>
+    * [.styleSourceId](#Layer+styleSourceId) : <code>String</code>
+    * [.textStyleName](#Layer+textStyleName) : <code>String</code>
+    * [.textStyleSourceId](#Layer+textStyleSourceId) : <code>String</code>
+    * [.maxHeight](#Layer+maxHeight) : <code>Number</code>
+    * [.maxWidth](#Layer+maxWidth) : <code>Number</code>
+    * [.minHeight](#Layer+minHeight) : <code>Number</code>
+    * [.minWidth](#Layer+minWidth) : <code>Number</code>
+    * [.maxLines](#Layer+maxLines) : <code>Number</code>
+    * [.textTruncation](#Layer+textTruncation) : <code>String</code>
 
 <a name="Layer+type"></a>
 ### layer.type : <code>String</code>
 Type of the layer, `text`, `shape` or `group`.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+shapeType"></a>
+### layer.shapeType : <code>String</code>
+Shape type of the shape layer, `rectangle` or `ellipse`.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
 
@@ -70,6 +90,24 @@ Bounding rectangle of the layer.
 <a name="Layer+layout"></a>
 ### layer.layout : [<code>Layout</code>](layout.md)
 Layout properties of the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+constraints"></a>
+### layer.constraints : [<code>LayerConstraints</code>](layerConstraints.md)
+Layout constraints of the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+layoutAlignment"></a>
+### layer.layoutAlignment : <code>Layout.ALIGNMENT</code>
+Alignment of the layer, defined in [Layout.ALIGNMENT](layout.md).
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+layoutGrow"></a>
+### layer.layoutGrow : <code>Number</code>
+Grow rate of the layer. This property specifies how much of the remaining space in the parent layer should be assigned to the item. Can be zero or a positive number.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)
 
@@ -194,5 +232,65 @@ Whether the layer is inspectable in Zeplin.
 <a name="Layer+cornerRadius"></a>
 ### layer.cornerRadius : [<code>CornerRadius</code>](cornerRadius.md)
 Corner radius of the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+styleName"></a>
+### layer.styleName : <code>String</code>
+Shared style name of the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+styleSourceId"></a>
+### layer.styleSourceId : <code>String</code>
+Shared style source identifier of the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+textStyleName"></a>
+### layer.textStyleName : <code>String</code>
+Shared text style name of the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+textStyleSourceId"></a>
+### layer.textStyleSourceId : <code>String</code>
+Shared text style identifier of the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+maxHeight"></a>
+### layer.maxHeight : <code>Number</code>
+Max height of the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+maxWidth"></a>
+### layer.maxWidth : <code>Number</code>
+Max width of the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+minHeight"></a>
+### layer.minHeight : <code>Number</code>
+Min height of the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+minWidth"></a>
+### layer.minWidth : <code>Number</code>
+Min width of the layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+maxLines"></a>
+### layer.maxLines : <code>Number</code>
+Max lines of the text layer.
+
+**Kind**: instance property of [<code>Layer</code>](#Layer)
+
+<a name="Layer+textTruncation"></a>
+### layer.textTruncation : <code>String</code>
+Determines how long text should be truncated for the text layers. Possible value is `end`.
 
 **Kind**: instance property of [<code>Layer</code>](#Layer)

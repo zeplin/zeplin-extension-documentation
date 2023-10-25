@@ -13,11 +13,15 @@
     * [.fontStretch](#TextStyle+fontStretch) : <code>String</code>
     * [.lineHeight](#TextStyle+lineHeight) : <code>Number</code>
     * [.textAlign](#TextStyle+textAlign) : <code>String</code>
+    * [.verticalAlignment](#TextStyle+verticalAlignment) : <code>String</code>
     * [.letterSpacing](#TextStyle+letterSpacing) : <code>Number</code>
     * [.color](#TextStyle+color) : [<code>Color</code>](color.md)
     * [.weightText](#TextStyle+weightText) : <code>String</code>
     * [.equals(t)](#TextStyle+equals) ⇒ <code>Boolean</code>
     * [.paragraphSpacing](#TextStyle+paragraphSpacing) : <code>Number</code>
+    * [.paragraphIndent](#TextStyle+paragraphIndent) : <code>Number</code>
+    * [.listSpacing](#TextStyle+listSpacing) : <code>Number</code>
+    * [.hyperlink](#TextStyle+hyperlink) : <code>String</code>    
     * [.textDecoration](#TextStyle+textDecoration) : [<code>TextDecoration</code>](textDecoration.md)
     * [.textTransform](#TextStyle+textTransform) : [<code>TEXT_TRANSFORM</code>](#TextStyle.TEXT_TRANSFORM)
   * _static_
@@ -83,6 +87,12 @@ Minimum height of a line for the text style.
 Horizontal alignment of the text style, `left`, `right`, `center`, or `justify`.
 
 **Kind**: instance property of [<code>TextStyle</code>](#TextStyle)
+<a name="TextStyle+verticalAlignment"></a>
+
+### textStyle.verticalAlignment : <code>String</code>
+Vertical alignment of the text style, `top`, `center`, or `bottom`.
+
+**Kind**: instance property of [<code>TextStyle</code>](#TextStyle)
 <a name="TextStyle+letterSpacing"></a>
 
 ### textStyle.letterSpacing : <code>Number</code>
@@ -116,6 +126,25 @@ Checks whether another text style. is equal to this one.
 <a name="TextStyle+paragraphSpacing"></a>
 ### textStyle.paragraphSpacing : <code>Number</code>
 Paragraph spacing of the text style.
+
+**Kind**: instance property of [<code>TextStyle</code>](#TextStyle)
+
+<a name="TextStyle+paragraphIndent"></a>
+### textStyle.paragraphIndent : <code>Number</code>
+Paragraph indent of the text style.
+
+**Kind**: instance property of [<code>TextStyle</code>](#TextStyle)
+
+<a name="TextStyle+listSpacing"></a>
+### textStyle.listSpacing : <code>Number</code>
+List spacing of the text style.
+
+**Kind**: instance property of [<code>TextStyle</code>](#TextStyle)
+
+<a name="TextStyle+hyperlink"></a>
+
+### textStyle.hyperlink : <code>String</code>
+Hyperlink of the text style.
 
 **Kind**: instance property of [<code>TextStyle</code>](#TextStyle)
 

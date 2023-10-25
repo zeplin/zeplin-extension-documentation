@@ -9,6 +9,8 @@
     * [.blurRadius](#Shadow+blurRadius) : <code>Number</code>
     * [.spread](#Shadow+spread) : <code>Number</code>
     * [.color](#Shadow+color) : [<code>Color</code>](color.md)
+    * [.opacity](#Shadow+opacity) : <code>Number</code>
+    * [.blendMode](#Shadow+blendMode) : [<code>BLEND_MODES</code>](#Fill.BLEND_MODES)
 
 <a name="Shadow+type"></a>
 
@@ -44,5 +46,17 @@ Spread of the shadow.
 
 ### shadow.color : [<code>Color</code>](color.md)
 Color of the shadow.
+
+**Kind**: instance property of [<code>Shadow</code>](#Shadow)
+<a name="Shadow+opacity"></a>
+
+### shadow.opacity : <code>Number</code>
+Opacity of the shadow, [0, 1].
+
+**Kind**: instance property of [<code>Shadow</code>](#Shadow)
+<a name="Shadow+blendMode"></a>
+
+### shadow.blendMode : [<code>BLEND_MODES</code>](#Shadow.BLEND_MODES)
+Blend mode of the shadow, defined in [BLEND_MODES](#Shadow.BLEND_MODES).
 
 **Kind**: instance property of [<code>Shadow</code>](#Shadow)
